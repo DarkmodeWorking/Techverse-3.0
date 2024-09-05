@@ -1,9 +1,18 @@
 "use client";
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
+import { FlipWords } from "../components/ui/flip-words";
+
+interface TimeLeft {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+}
 
 const CountdownTimer: React.FC = () => {
   const calculateTimeLeft = (): TimeLeft => {
-    const targetDate = new Date('2024-12-31T23:59:59'); // Set your target date and time here
+    // Set your target date in IST
+    const targetDate = new Date("2024-12-31T23:59:59+05:30");
     const now = new Date();
     const difference = targetDate.getTime() - now.getTime();
 
@@ -18,20 +27,13 @@ const CountdownTimer: React.FC = () => {
       timeLeft = {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
+        minutes: Math.floor((difference / (1000 * 60)) % 60),
         seconds: Math.floor((difference / 1000) % 60),
       };
     }
 
     return timeLeft;
   };
-
-  interface TimeLeft {
-    days: number;
-    hours: number;
-    minutes: number;
-    seconds: number;
-  }
 
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
 
@@ -43,12 +45,18 @@ const CountdownTimer: React.FC = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const formatTime = (time: number): string => (time < 10 ? `0${time}` : time.toString());
+  const formatTime = (time: number): string =>
+    time < 10 ? `0${time}` : time.toString();
 
   return (
-    <h2 className="text-center text-lg md:text-4xl font-bold text-black dark:text-white">
-      {timeLeft.days} days {formatTime(timeLeft.hours)} : {formatTime(timeLeft.minutes)} : {formatTime(timeLeft.seconds)} Left
-    </h2>
+    <div className="text-center text-lg md:text-4xl font-bold text-black dark:text-white">
+      <div>
+        <FlipWords word={formatTime(timeLeft.days)} /> days{" "}
+        <FlipWords word={formatTime(timeLeft.hours)} /> :
+        <FlipWords word={formatTime(timeLeft.minutes)} /> :
+        <FlipWords word={formatTime(timeLeft.seconds)} /> Left
+      </div>
+    </div>
   );
 };
 
