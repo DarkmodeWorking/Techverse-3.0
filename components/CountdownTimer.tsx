@@ -47,7 +47,7 @@ const CountdownTimer: React.FC = () => {
 
   return (
     <h2 className="text-center text-lg md:text-4xl font-bold text-black dark:text-white">
-      {timeLeft.days} days {formatTime(timeLeft.hours)} hours {formatTime(timeLeft.minutes)} minutes {formatTime(timeLeft.seconds)} seconds Left
+      {timeLeft.days} days {formatTime(timeLeft.hours)} : {formatTime(timeLeft.minutes)} : {formatTime(timeLeft.seconds)} Left
     </h2>
   );
 };
