@@ -73,19 +73,19 @@ const data = [
   {
     category: "Indoor Carrom",
     title: "Techverse Strikers",
-    src: "/images/carrom.webp",
+    src: "/images/carrom2.webp",
+    content: <DummyContent />,
+  },
+  {
+    category: "Photography",
+    title: "Techverse Shutters",
+    src: "/images/photo2.webp",
     content: <DummyContent />,
   },
   {
     category: "PUBG Gaming",
     title: "Techverse PUBG",
     src: "/images/pubg.webp",
-    content: <DummyContent />,
-  },
-  {
-    category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: <DummyContent />,
   },
 ];

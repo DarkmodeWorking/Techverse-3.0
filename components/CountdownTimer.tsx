@@ -49,12 +49,12 @@ const CountdownTimer: React.FC = () => {
     time < 10 ? `0${time}` : time.toString();
 
   return (
-    <div className="text-center text-lg md:text-4xl font-bold text-black dark:text-white">
+    <div className=" border-2 border-neutral-400 p-4 rounded-xl border-solid mx-16 md:mx-96 text-center text-lg md:text-4xl font-bold text-neutral-400">
       <div>
-        <FlipWords word={formatTime(timeLeft.days)} /> days{" "}
-        <FlipWords word={formatTime(timeLeft.hours)} /> :
-        <FlipWords word={formatTime(timeLeft.minutes)} /> :
-        <FlipWords word={formatTime(timeLeft.seconds)} /> Left
+        <FlipWords word={formatTime(timeLeft.days)} /> : {" "}
+        <FlipWords word={formatTime(timeLeft.hours)} /> : {" "}
+        <FlipWords word={formatTime(timeLeft.minutes)} /> : {" "}
+        <FlipWords word={formatTime(timeLeft.seconds)} /> 
       </div>
     </div>
   );
