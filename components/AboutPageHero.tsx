@@ -5,8 +5,8 @@ import { SparklesCore } from "./ui/sparkles";
 export function AboutPageHero() {
   return (
     <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-      <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20 font-serif">
-        Techverse 3.0
+      <h1 className="text-5xl md:text-9xl font-mono font-extrabold text-center mt-10  text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-300">
+        TECHVERSE 3.0
       </h1>
       <div className="w-[40rem] h-40 relative">
         {/* Gradients */}

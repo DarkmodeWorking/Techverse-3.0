@@ -5,7 +5,7 @@ import { TextRevealCard, TextRevealCardTitle } from "./ui/text-reveal-card";
 export function CoreTeam() {
   return (
     <div className="flex flex-col items-center justify-center bg-[#0E0E10] min-h-screen w-full py-10">
-      <TextRevealCardTitle className="text-3xl text-white mb-10">
+      <TextRevealCardTitle className="text-3xl text-white mb-10 text-center">
         Meet our Core Team members
       </TextRevealCardTitle>
 
@@ -15,9 +15,10 @@ export function CoreTeam() {
           text="Shampurna Rakshit"
           revealText="Convener"
           className="w-full break-words whitespace-normal leading-tight"
+          // className="w-full break-words whitespace-normal leading-tight bg-[url('/images/photo2.webp')] bg-cover"
         />
         <TextRevealCard
-          text="Zishan Khan"
+          text="Zishan Khan Chowdhury"
           revealText="Convener"
           className="w-full break-words whitespace-normal leading-tight"
         />
