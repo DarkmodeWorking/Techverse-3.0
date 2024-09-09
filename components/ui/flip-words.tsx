@@ -11,13 +11,22 @@ export const FlipWords = ({
   className?: string;
 }) => {
   const [currentWord, setCurrentWord] = useState(word);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    // Set new word when the prop changes
-    if (currentWord !== word) {
-      setCurrentWord(word);
+    setIsClient(true); // Ensure we are on the client side
+  }, []);
+
+  useEffect(() => {
+    if (isClient && currentWord !== word) {
+      setCurrentWord(word); // Update the word only on the client side
     }
-  }, [word, currentWord]);
+  }, [word, currentWord, isClient]);
+
+  if (!isClient) {
+    // Render a placeholder during SSR to prevent hydration mismatch
+    return <span className={cn("static-text-class", className)}>...</span>;
+  }
 
   return (
     <AnimatePresence>
@@ -65,5 +74,36 @@ export const FlipWords = ({
         ))}
       </motion.div>
     </AnimatePresence>
+  );
+};
+
+export const CountdownTimer = ({ initialTime }: { initialTime: number }) => {
+  const [time, setTime] = useState(initialTime);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true); // Wait for client-side render
+  }, []);
+
+  useEffect(() => {
+    if (isClient) {
+      // Start countdown on client side
+      const interval = setInterval(() => {
+        setTime((prevTime) => (prevTime > 0 ? prevTime - 1 : 0));
+      }, 1000);
+
+      return () => clearInterval(interval); // Cleanup interval on unmount
+    }
+  }, [isClient]);
+
+  if (!isClient) {
+    // Render static content during SSR
+    return <div>...</div>;
+  }
+
+  return (
+    <div>
+      <FlipWords word={time.toString()} />
+    </div>
   );
 };
