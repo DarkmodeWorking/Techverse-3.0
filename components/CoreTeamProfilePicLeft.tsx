@@ -42,7 +42,7 @@ const people = [
     name: "Nanda Lal Das",
     designation: "Tech Lead",
     image:
-      "/coreTeam/Nanda3.png",
+      "/coreTeam/Nanda.png",
   },
 ];
 
