@@ -72,6 +72,16 @@ export function CoreTeam() {
           revealText="SPOC"
           className="w-full break-words whitespace-normal leading-tight"
         />
+           <TextRevealCard
+          text="Mohok Bhanja"
+          revealText="Explorer"
+          className="w-full break-words whitespace-normal leading-tight"
+        />
+           <TextRevealCard
+          text="Triyasha Kuri"
+          revealText="Decorations"
+          className="w-full break-words whitespace-normal leading-tight"
+        />
       </div>
     </div>
   );
