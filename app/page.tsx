@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       
-    <main className="mt-40 flex min-h-screen flex-col items-center justify-between">
+    <main className="mb-10 mt-24 sm:mt-0 flex min-h-screen flex-col items-center justify-between">
       
       <Hero/>
       <Earth/>
