@@ -9,7 +9,7 @@ import { div } from "framer-motion/client";
 export default function AboutPage() {
     return (
       <div>
-        <div className="mt-10 flex min-h-screen flex-col items-center justify-between">
+        <div className="flex min-h-screen flex-col items-center justify-between">
        <AboutPageHero/>
        {/* <StarBackground/> */}
        <CoreTeam/>
