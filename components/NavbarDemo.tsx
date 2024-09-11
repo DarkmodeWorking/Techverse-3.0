@@ -1,74 +1,65 @@
 "use client";
+
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "../components/ui/navbar-menu";
+import { HoveredLink, Menu } from "../components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 export function NavbarDemo() {
   return (
     <div className="relative w-full flex items-center justify-center">
-      <Navbar className="top-10" />
-      
+      <Navbar className="pt-5" />
     </div>
   );
 }
 
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleScrollToEvents = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const element = document.getElementById('events');
+    if (element) {
+      window.scrollTo({ top: element.offsetTop, behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div
-      className={cn("absolute top-10 inset-x-0 max-w-lg mx-auto z-50", className)}
-    >
-      <Menu setActive={setActive}>
-        <HoveredLink href="/">Home</HoveredLink>
-        <HoveredLink href="/about">About</HoveredLink>
-        <HoveredLink href="#events">Events</HoveredLink>
-        <HoveredLink href="/contact">Contact</HoveredLink>
-        {/* <MenuItem setActive={setActive}active={active} item="Services">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
-          </div>
-        </MenuItem> */}
-        
-        {/* <MenuItem setActive={setActive} active={active} item="Products">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
-            <ProductItem
-              title="Algochurn"
-              href="https://algochurn.com"
-              src="https://assets.aceternity.com/demos/algochurn.webp"
-              description="Prepare for tech interviews like never before."
-            />
-            <ProductItem
-              title="Tailwind Master Kit"
-              href="https://tailwindmasterkit.com"
-              src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-              description="Production ready Tailwind css components for your next project"
-            />
-            <ProductItem
-              title="Moonbeam"
-              href="https://gomoonbeam.com"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-              description="Never write from scratch again. Go from idea to blog in minutes."
-            />
-            <ProductItem
-              title="Rogue"
-              href="https://userogue.com"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
-            />
-          </div>
-        </MenuItem> */}
-        {/* <MenuItem setActive={setActive} active={active} item="Pricing">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-          </div>
-        </MenuItem> */}
-      </Menu>
+    <div className={cn("relative max-w-lg mx-auto z-50", className)}>
+      {/* Mobile Menu Toggle Button */}
+      <button 
+        className="fixed top-4 left-4 lg:hidden text-2xl z-50"
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label={isOpen ? "Close menu" : "Open menu"}
+      >
+        {isOpen ? '✖️' : '☰'}
+      </button>
+
+      {/* Mobile Menu */}
+      <motion.div
+        initial={{ opacity: 0, x: '-100%' }}
+        animate={{ opacity: isOpen ? 1 : 0, x: isOpen ? 0 : '-100%' }}
+        transition={{ duration: 0.3 }}
+        className={`fixed inset-0 bg-gray-900 bg-opacity-90 z-40 flex flex-col items-center justify-center space-y-4 ${isOpen ? 'block' : 'hidden'} lg:hidden`}
+      >
+        <Menu setActive={setActive}>
+          <HoveredLink href="/" onClick={() => setIsOpen(false)}>Home</HoveredLink>
+          <HoveredLink href="/about" onClick={() => setIsOpen(false)}>About</HoveredLink>
+          <HoveredLink href="#" onClick={(e: React.MouseEvent<Element, MouseEvent>) => { handleScrollToEvents(e); setIsOpen(false); }}>Events</HoveredLink>
+          <HoveredLink href="/contact" onClick={() => setIsOpen(false)}>Contact</HoveredLink>
+        </Menu>
+      </motion.div>
+
+      {/* Desktop Menu */}
+      <div className="hidden lg:flex lg:items-center lg:space-x-4  lg:shadow-md lg:justify-center lg:py-2 lg:mx-auto lg:w-full pb-0 mb-0">
+        <Menu setActive={setActive}>
+          <HoveredLink href="/" onClick={() => setIsOpen(false)}>Home</HoveredLink>
+          <HoveredLink href="/about" onClick={() => setIsOpen(false)}>About</HoveredLink>
+          <HoveredLink href="#" onClick={(e: React.MouseEvent<Element, MouseEvent>) => { handleScrollToEvents(e); setIsOpen(false); }}>Events</HoveredLink>
+          <HoveredLink href="/contact" onClick={() => setIsOpen(false)}>Contact</HoveredLink>
+        </Menu>
+      </div>
     </div>
   );
 }

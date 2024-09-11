@@ -7,7 +7,7 @@ import Image from "next/image"
 export default function Home() {
   return (
     <div>
-      <NavbarDemo />
+      
     <main className="mt-40 flex min-h-screen flex-col items-center justify-between">
       
       <Hero/>
