@@ -19,10 +19,10 @@ const people = [
   },
   {
     id: 3,
-    name: "Jane Smith",
-    designation: "Data Scientist",
+    name: "Smarta Das",
+    designation: "SPOC",
     image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+      "/coreTeam/Smarta.png",
   },
   {
     id: 4,
