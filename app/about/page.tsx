@@ -9,7 +9,6 @@ import { div } from "framer-motion/client";
 export default function AboutPage() {
     return (
       <div>
-        <NavbarDemo />
         <div className="mt-10 flex min-h-screen flex-col items-center justify-between">
        <AboutPageHero/>
        {/* <StarBackground/> */}
