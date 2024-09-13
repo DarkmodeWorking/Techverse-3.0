@@ -12,7 +12,7 @@ interface TimeLeft {
 const CountdownTimer: React.FC = () => {
   const calculateTimeLeft = (): TimeLeft => {
     // Set your target date in IST
-    const targetDate = new Date("2024-11-17T23:59:59+05:30");
+    const targetDate = new Date("2024-11-04T23:59:59+05:30");
     const now = new Date();
     const difference = targetDate.getTime() - now.getTime();
 
