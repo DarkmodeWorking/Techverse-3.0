@@ -36,12 +36,12 @@ export function Dock() {
       href: "#",
     },
     {
-      title: "Aceternity UI",
+      title: "GNIT",
       icon: (
         <Image
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
+          src="/gurunanoklogo.png"
+          width={50}
+          height={50}
           alt="Aceternity Logo"
         />
       ),
@@ -71,7 +71,7 @@ export function Dock() {
     },
   ];
   return (
-    <div className="flex items-center justify-center h-[35rem] w-full">
+    <div className="flex items-center justify-center h-0 md:h-20 w-full">
       <FloatingDock
         mobileClassName="translate-y-20" // only for demo, remove for production
         items={links}
