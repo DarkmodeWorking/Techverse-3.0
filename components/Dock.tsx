@@ -18,7 +18,7 @@ export function Dock() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/",
     },
 
     {
@@ -33,7 +33,7 @@ export function Dock() {
       icon: (
         <IconPhone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/contact",
     },
     {
       title: "GNIT",
@@ -45,7 +45,7 @@ export function Dock() {
           alt="Aceternity Logo"
         />
       ),
-      href: "#",
+      href: "https://gnit.ac.in/",
     },
     {
       title: "Facebook",
@@ -67,7 +67,7 @@ export function Dock() {
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/Tiklu01/Techverse3.0",
     },
   ];
   return (
