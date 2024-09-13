@@ -18,7 +18,7 @@ export function Dock() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/",
     },
 
     {
@@ -33,19 +33,19 @@ export function Dock() {
       icon: (
         <IconPhone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/contact",
     },
     {
-      title: "Aceternity UI",
+      title: "GNIT",
       icon: (
         <Image
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
+          src="/gurunanoklogo.png"
+          width={50}
+          height={50}
           alt="Aceternity Logo"
         />
       ),
-      href: "#",
+      href: "https://gnit.ac.in/",
     },
     {
       title: "Facebook",
@@ -67,11 +67,11 @@ export function Dock() {
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/Tiklu01/Techverse3.0",
     },
   ];
   return (
-    <div className="flex items-center justify-center h-[35rem] w-full">
+    <div className="flex items-center justify-center h-0 md:h-20 w-full">
       <FloatingDock
         mobileClassName="translate-y-20" // only for demo, remove for production
         items={links}
