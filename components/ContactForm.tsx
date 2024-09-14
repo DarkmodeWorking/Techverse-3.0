@@ -5,7 +5,7 @@ import { SparklesCore } from "@/components/ui/sparkles";
 
 const ContactForm = () => {
   return (
-    <div className="h-full relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md relative">
+    <div className="h-full w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md relative">
       
       {/* Background Sparkles */}
       <div className="w-full absolute inset-0 h-screen z-0">
