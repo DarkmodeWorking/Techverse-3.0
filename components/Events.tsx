@@ -3,6 +3,8 @@ import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
+import { SuperCoder } from '@/components/events/SuperCoder'
+
 export function Events() {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
@@ -20,47 +22,102 @@ export function Events() {
 
 const DummyContent = () => {
   return (
-    <>
-      {[...new Array(3).fill(1)].map((_, index) => {
-        return (
-          <div
-            key={"dummy-content" + index}
-            className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
-          >
-            <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-              <span className="font-bold text-neutral-700 dark:text-neutral-200">
-                The first rule of Apple club is that you boast about Apple club.
-              </span>{" "}
-              Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes. Want to convert those notes to text? No problem.
-              Langotiya jeetu ka mara hua yaar is ready to capture every
-              thought.
-            </p>
-            <Image
-              src="https://assets.aceternity.com/macbook.png"
-              alt="Macbook mockup from Aceternity UI"
-              height="500"
-              width="500"
-              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
-          </div>
-        );
-      })}
-    </>
+    <div
+      key={"dummy-content"}
+      className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+    >
+      <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+        <span className="font-bold text-neutral-700 dark:text-neutral-200">
+          
+        </span>{" "}
+        Oi Cunt solve this Linked List or I shall put Omlandah on yo ass
+      </p>
+      <Image
+        src="/images/supercoders.jpeg"
+        alt="Macbook mockup from Aceternity UI"
+        width={500}
+        height={500}
+        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+      />
+      <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+        Solo: ₹ 69
+        Duo: ₹ 420
+      </p>
+      <div className="flex justify-between">
+        <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+          Event Head: Onurag Cunt <br />
+          Phone: +91 69420 69420 <br />
+          Email: omlandahdonkillmywife@gmail.com
+        </p>
+        <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+          Co-Event Head: Omlandah <br />
+          Phone: +91 42069 42069 <br />
+          Email: tookmybloodyson@reddiffmail.com
+        </p>
+      </div>
+    </div>
   );
 };
 
 const data = [
   {
-    category: "Problem Solving Coding",
-    title: "Techverse Supercoders",
-    src: "/images/supercoders.jpeg",
-    content: <DummyContent />,
+    category: "Model Display",
+    title: "Techverse Innovators",
+    src: "/images/modeldisplay.jpg",
+    content: <SuperCoder />,
+  },
+  {
+    category: "Idea Presentation",
+    title: "Techverse Builders",
+    src: "/images/idea2.jpg",
+    content: <SuperCoder />,
+  },
+  {
+    category: "Poster Presentation",
+    title: "Techverse Artisans",
+    src: "/images/poster.jpg",
+    content: <SuperCoder />,
+  },
+  {
+    category: "Tech Quiz",
+    title: "Techverse Buzzers",
+    src: "/images/techquiz.jpg",
+    content: <SuperCoder />,
   },
   {
     category: "Website Development",
     title: "Techverse Webbers",
     src: "/images/website.webp",
+    content: <DummyContent />,
+  },
+  {
+    category: "Problem Solving Coding",
+    title: "Techverse Supercoders",
+    src: "/images/supercoders.jpeg",
+    content: <SuperCoder />,
+  },
+  {
+    category: "RC Car Lap Race",
+    title: "Techverse Pursuits",
+    src: "/images/laprace.jpg",
+    content: <DummyContent />
+  },
+  {
+    category: "PUBG Gaming",
+    title: "Techverse PUBG",
+    src: "/images/pubg.webp",
+    content: <DummyContent />,
+  },
+  {
+    category: "E Football",
+    title: "Techverse Football",
+    src: "/images/football.jpg",
+    content: <DummyContent />,
+  },
+  {
+    category: "8 Ball Pool",
+    title: "Techverse Pool",
+    src: "/images/8ball.jpg",
     content: <DummyContent />,
   },
   {
@@ -83,9 +140,9 @@ const data = [
     content: <DummyContent />,
   },
   {
-    category: "PUBG Gaming",
-    title: "Techverse PUBG",
-    src: "/images/pubg.webp",
+    category: "Treasure Hunt",
+    title: "Techverse Explorers",
+    src: "/images/treasure2.jpg",
     content: <DummyContent />,
-  },
+  }
 ];

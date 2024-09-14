@@ -111,7 +111,7 @@ export const TextRevealCard = ({
         ></motion.div>
 
         <div className="overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,white,transparent)]">
-          <p className="text-base text-[1.3em] sm:text-[1.9rem] leading-snug py-10 font-bold bg-clip-text text-transparent bg-[#858585] whitespace-normal">
+          <p className="text-base text-[1.3em] sm:text-[1.7rem] leading-snug py-10 font-bold bg-clip-text text-transparent bg-[#fff] whitespace-normal">
             {text}
           </p>
           <MemoizedStars />

@@ -36,11 +36,13 @@ export function CoreTeam() {
           text="Nanda Lal Das"
           revealText="Tech Lead"
           className="w-full break-words whitespace-normal leading-tight"
+          // className="bg-[url('/coreTeam/nandatest.png')] bg-cover bg-center w-full break-words whitespace-normal leading-tight"
         />
         <TextRevealCard
           text="Sudipta Sen"
           revealText="Media Head"
           className="w-full break-words whitespace-normal leading-tight"
+          // className="bg-[url('/coreTeam/sudiptatest.png')] bg-cover bg-center w-full break-words whitespace-normal leading-tight"
         />
         <TextRevealCard
           text="Mrinmoy Golder"
@@ -71,6 +73,7 @@ export function CoreTeam() {
           text="Smarta Das"
           revealText="SPOC"
           className="w-full break-words whitespace-normal leading-tight"
+          // className="bg-[url('/coreTeam/smartatest.png')] bg-cover bg-center w-full break-words whitespace-normal leading-tight"
         />
            <TextRevealCard
           text="Mohok Bhanja"
@@ -80,7 +83,7 @@ export function CoreTeam() {
            <TextRevealCard
           text="Triyasha Kuri"
           revealText="Decorations"
-          className="w-full break-words whitespace-normal leading-tight"
+          className=" w-full break-words whitespace-normal leading-tight"
         />
       </div>
     </div>
