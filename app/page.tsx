@@ -14,7 +14,7 @@ export default function Home() {
       <Hero/>
       <Earth/>
       <Events/>
-      <Footer/>
+     
     </main>
     </div>
   );
