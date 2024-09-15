@@ -5,10 +5,10 @@ import { AnimatedTooltip } from "./ui/animated-tooltip";
 const people = [
   {
     id: 1,
-    name: "Riya Banerjee",
-    designation: "SPOC",
+    name: "Zishan Khan",
+    designation: "Converner",
     image:
-      "/coreTeam/Riya.png"
+      "/coreTeam/Zishan.png"
     },
   {
     id: 2,
@@ -26,8 +26,8 @@ const people = [
   },
   {
     id: 4,
-    name: "Emily Davis",
-    designation: "UX Designer",
+    name: "Aniket Das",
+    designation: "Co-ordinator",
     image:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
   },
@@ -36,14 +36,21 @@ const people = [
     name: "Mohok Bhanja",
     designation: "Explorer",
     image:
-      "/coreTeam/Mohok.png",
+      "/coreTeam/Mohok1.png",
   },
   {
     id: 6,
-    name: "Nanda Lal Das",
-    designation: "Tech Lead",
+    name: "undefined",
+    designation: "Marketing Head",
     image:
-      "/coreTeam/Nanda.png",
+      "/coreTeam/Nanda3.png",
+  },
+  {
+    id: 7,
+    name: "Ankita Ghosh",
+    designation: "Co-ordinator",
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
   },
 ];
 
