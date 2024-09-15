@@ -13,18 +13,18 @@ export function CoreTeam() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full px-10">
         <TextRevealCard
           text="Shampurna Rakshit"
-          revealText="Convenor"
+          revealText="Convener"
           className="w-full break-words whitespace-normal leading-tight"
           
         />
         <TextRevealCard
           text="Zishan Khan Chowdhury"
-          revealText="Convenor"
+          revealText="Convener"
           className="w-full break-words whitespace-normal leading-tight"
         />
         <TextRevealCard
           text="Arijit Nandi"
-          revealText="Convenor"
+          revealText="Convener"
           className="w-full break-words whitespace-normal leading-tight"
         />
         <TextRevealCard
@@ -45,7 +45,7 @@ export function CoreTeam() {
           // className="bg-[url('/coreTeam/sudiptatest.png')] bg-cover bg-center w-full break-words whitespace-normal leading-tight"
         />
         <TextRevealCard
-          text="Mrinmoy Golder"
+          text="Undefined"
           revealText="Marketing Head"
           className="w-full break-words whitespace-normal leading-tight"
         />
