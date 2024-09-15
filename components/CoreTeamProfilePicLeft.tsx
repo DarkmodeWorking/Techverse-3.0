@@ -32,7 +32,7 @@ const people = [
     },
   {
     id: 5,
-    name: "Triyasha Kuri",
+    name: "Tiyasha Kuri",
     designation: "Decoration",
     image:
       "/coreTeam/Triyasha.png",
