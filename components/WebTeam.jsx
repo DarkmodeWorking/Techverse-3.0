@@ -21,7 +21,7 @@ const people = [
 export function WebTeam() {
   return (
     <div className="flex flex-row items-center justify-center mb-10 w-full">
-      <p className="text-white sm:text-3xl text-xl mr-3"> Created By: </p>
+      <p className="text-white sm:text-2xl text-xl mr-3"> Created By: </p>
       <AnimatedTooltip items={people} />
     </div>
   );
