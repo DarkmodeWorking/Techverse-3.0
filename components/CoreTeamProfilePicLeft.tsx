@@ -7,7 +7,7 @@ const people = [
     name: "Shampurna Rakshit",
     designation: "Convener",
     image:
-      "/coreTeam/Riya.png"
+      "/coreTeam/Shampurna.png"
     },
   {
     id: 2,
@@ -49,7 +49,7 @@ const people = [
     name: "Nanda Lal Das",
     designation: "Tech Lead",
     image:
-      "/coreTeam/Nanda.png",
+      "/coreTeam/Nanda4.png",
   },
 ];
 
