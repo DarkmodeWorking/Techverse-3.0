@@ -81,9 +81,14 @@ export function CoreTeam() {
           className="w-full break-words whitespace-normal leading-tight"
         />
            <TextRevealCard
-          text="Triyasha Kuri"
+          text="Tiyasha Kuri"
           revealText="Decorations"
           className=" w-full break-words whitespace-normal leading-tight"
+        />
+         <TextRevealCard
+          text="Sayan Acharya"
+          revealText="SPOC"
+          className="w-full break-words whitespace-normal leading-tight"
         />
       </div>
     </div>
