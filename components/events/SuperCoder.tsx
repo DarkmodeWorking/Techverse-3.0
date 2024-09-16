@@ -21,7 +21,7 @@ export function SuperCoder() {
           Solo: ₹ 69
           Duo: ₹ 420
         </p>
-        <div className="flex justify-between">
+        <div className="sm:flex justify-between">
           <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
             Event Head: Onurag Cunt <br />
             Phone: +91 69420 69420 <br />

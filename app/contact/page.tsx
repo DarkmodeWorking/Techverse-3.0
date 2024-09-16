@@ -14,7 +14,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div>
+            <div className="mb-8">
                 <ContactForm />
             </div>
         </div>

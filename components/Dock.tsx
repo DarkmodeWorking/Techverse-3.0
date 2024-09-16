@@ -54,26 +54,18 @@ export function Dock() {
       ),
       href: "#",
     },
-
     {
       title: "Instagram",
       icon: (
         <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
-    },
-    {
-      title: "GitHub",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "https://github.com/Tiklu01/Techverse3.0",
-    },
+    }
   ];
   return (
     <div className="flex items-center justify-center h-0 md:h-20 w-full">
       <FloatingDock
-        mobileClassName="translate-y-20" // only for demo, remove for production
+        // mobileClassName="translate-y-20" 
         items={links}
       />
     </div>
