@@ -21,8 +21,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <NavbarDemo />
         <main>{children}</main>
+        <Footer /> {/* Moved Footer inside body */}
       </body>
-      <Footer/>
     </html>
   );
 }
