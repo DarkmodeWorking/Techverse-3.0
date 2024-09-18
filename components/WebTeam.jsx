@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { AnimatedTooltip } from "./ui/web-tooltip";
+import { WebTooltip } from "./ui/web-tooltip";
 
 const people = [
   {
@@ -8,12 +8,14 @@ const people = [
     name: "Anurag Bhattacharjee",
     designation: "Darkmode Addict",
     image: "/coreTeam/github.png",
+    href:"https://www.linkedin.com/in/anurag-bhattacharjee-65a487275/"
   },
   {
     id: 2,
     name: "Nanda Lal Das",
-    designation: "Cosmic Entity",
+    designation: "Heavenly Demon",
     image: "/coreTeam/Nanda4.png",
+    href: "https://www.linkedin.com/in/nanda-das-7b2242243/",
   },
 ];
 
@@ -21,7 +23,7 @@ export function WebTeam() {
   return (
     <div className="flex flex-row items-center justify-center mb-10 w-full">
       <p className="text-white sm:text-2xl text-xl mr-3"> Created By: </p>
-      <AnimatedTooltip items={people} />
+      <WebTooltip items={people} />
     </div>
   );
 }
