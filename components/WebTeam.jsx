@@ -1,20 +1,19 @@
 "use client";
 import React from "react";
 import { AnimatedTooltip } from "./ui/web-tooltip";
+
 const people = [
   {
     id: 1,
     name: "Anurag Bhattacharjee",
     designation: "Darkmode Addict",
-    image:
-      "/coreTeam/github.png"
-    },
+    image: "/coreTeam/github.png",
+  },
   {
-    id: 7,
+    id: 2,
     name: "Nanda Lal Das",
     designation: "Cosmic Entity",
-    image:
-      "/coreTeam/Nanda.png",
+    image: "/coreTeam/Nanda4.png",
   },
 ];
 
