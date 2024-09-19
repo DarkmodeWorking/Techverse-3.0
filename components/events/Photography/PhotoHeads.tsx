@@ -1,4 +1,4 @@
-export function SuperCoder() {
+export function PhotoHeads() {
     return (
       <div
         key={"dummy-content"}
@@ -23,14 +23,14 @@ export function SuperCoder() {
         </p>
         <div className="sm:flex justify-between">
           <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
-            Event Head: Onurag Cunt <br />
-            Phone: +91 69420 69420 <br />
-            Email: omlandahdonkillmywife@gmail.com
+            Event Head: Swayam Mondal <br />
+            Phone: +91 62902 47709 <br />
+            Email: swayamondal@gmail.com
           </p>
           <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
-            Co-Event Head: Omlandah <br />
-            Phone: +91 42069 42069 <br />
-            Email: tookmybloodyson@reddiffmail.com
+            Co-Event Head: Daipayan Kumar <br />
+            Phone: +91 76794 96675 <br />
+            Email: daipayan.kumar13@gmail.com
           </p>
         </div>
       </div>
