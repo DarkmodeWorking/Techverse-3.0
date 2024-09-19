@@ -11,8 +11,8 @@ export function PhotoRules() {
           <br />3. Photos with watermarks are not eligible
           <br />4. Multiple entries are accepted from one participant. For each entry registration is required
           <br />5. Entries will be disqualified if the entry does not follow the theme. Registration money will not be refunded in that case.
-          <br />6. Entries should be named after the participant's names.
-          <br />7. Mail your entry to event head's mail id.
+          <br />6. Entries should be named after the participant&apos;s names.
+          <br />7. Mail your entry to event head&apos;s mail id.
           <br />8. Submit your hard copy (printed in 5x7 photo paper) before two days of the event.
         </p>
       </div>
