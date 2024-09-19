@@ -3,7 +3,42 @@ import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
-import { SuperCoder } from '@/components/events/SuperCoder'
+import { SuperCoder } from '@/components/events/Supercoder/SuperCoders'
+import { SuperCoderRules } from "./events/Supercoder/SuperCoderRules";
+import { SuperCoderHeads } from "./events/Supercoder/SuperCoderHeads";
+import { WebDev } from "./events/WebDev/WebDev";
+import { WebDevRules } from "./events/WebDev/WebDevRules";
+import { WebDevHeads } from "./events/WebDev/WebDevHeads";
+import { TechQuiz } from "./events/TechQuiz/TechQuiz";
+import { TechQuizRules } from "./events/TechQuiz/TechQuizRules";
+import { TechQuizHeads } from "./events/TechQuiz/TechQuizHeads";
+import { VisionHack } from "./events/VisionHack/VisionHack";
+import { VisionHackRules } from "./events/VisionHack/VisionHackRules";
+import { VisionHackHeads } from "./events/VisionHack/VisionHackHeads";
+import { ModelDisplay } from "./events/ModelDisplay/ModelDisplay";
+import { ModelDisplayRules } from "./events/ModelDisplay/ModelDisplayRules";
+import { ModelDisplayHeads } from "./events/ModelDisplay/ModelDisplayHeads";
+import { Poster } from "./events/Poster/Poster";
+import { PosterRules } from "./events/Poster/PosterRules";
+import { PosterHeads } from "./events/Poster/PosterHeads";
+import { LapRace } from "./events/LapRace/LapRace";
+import { LapRaceRules } from "./events/LapRace/LapRaceRules";
+import { LapRaceHeads } from "./events/LapRace/LapRaceHeads";
+import { BGMI } from "./events/BGMI/BGMI";
+import { BGMIRules } from "./events/BGMI/BGMIRules";
+import { BGMIHeads } from "./events/BGMI/BGMIHeads";
+import { Football } from "./events/Football/Football";
+import { FootballRules } from "./events/Football/FootballRules";
+import { FootballHeads } from "./events/Football/FootballHeads";
+import { Ball } from "./events/Ball8/Ball";
+import { BallRules } from "./events/Ball8/BallRules";
+import { BallHeads } from "./events/Ball8/BallHeads";
+import { Photo } from "./events/Photography/Photo";
+import { PhotoRules } from "./events/Photography/PhotoRules";
+import { PhotoHeads } from "./events/Photography/PhotoHeads";
+import { TreasureHunt } from "./events/TreasureHunt/TreasureHunt";
+import { TreasureHuntRules } from "./events/TreasureHunt/TreasureHuntRules";
+import { TreasureHuntHeads } from "./events/TreasureHunt/TreasureHuntHeads";
 
 export function Events() {
   const cards = data.map((card, index) => (
@@ -62,87 +97,115 @@ const DummyContent = () => {
 const data = [
   {
     category: "Model Display",
-    title: "Techverse Innovators",
+    title: "Model Display*",
     src: "/images/modeldisplay.jpg",
-    content: <SuperCoder />,
+    content: <ModelDisplay />,
+    rules: <ModelDisplayRules />,
+    heads: <ModelDisplayHeads />
   },
   {
-    category: "Idea Presentation",
-    title: "Techverse Builders",
+    category: "Mini Hackathon",
+    title: "Vision Hack",
     src: "/images/idea2.jpg",
-    content: <SuperCoder />,
+    content: <VisionHack />,
+    rules: <VisionHackRules />,
+    heads: <VisionHackHeads />
   },
   {
-    category: "Poster Presentation",
-    title: "Techverse Artisans",
+    category: "Poster Presentation", // artisans
+    title: "Poster Presentation*",
     src: "/images/poster.jpg",
-    content: <SuperCoder />,
+    content: <Poster />,
+    rules: <PosterRules />,
+    heads: <PosterHeads />
   },
   {
     category: "Tech Quiz",
-    title: "Techverse Buzzers",
+    title: "Quiz of Thrones",
     src: "/images/techquiz.jpg",
-    content: <SuperCoder />,
+    content: <TechQuiz />,
+    rules: <TechQuizRules />,
+    heads: <TechQuizHeads />
   },
   {
     category: "Website Development",
-    title: "Techverse Webbers",
+    title: "Web Devs",
     src: "/images/website.webp",
-    content: <DummyContent />,
+    content: <WebDev />,
+    rules: <WebDevRules />,
+    heads: <WebDevHeads />
   },
   {
     category: "Problem Solving Coding",
-    title: "Techverse Supercoders",
+    title: "Super Coders",
     src: "/images/supercoders.jpeg",
     content: <SuperCoder />,
+    rules: <SuperCoderRules />,
+    heads: <SuperCoderHeads />
   },
   {
-    category: "RC Car Lap Race",
-    title: "Techverse Pursuits",
+    category: "Lap Race",
+    title: "Speed Drift",
     src: "/images/laprace.jpg",
-    content: <DummyContent />
+    content: <LapRace />,
+    rules: <LapRaceRules />,
+    heads: <LapRaceHeads />
   },
   {
-    category: "PUBG Gaming",
-    title: "Techverse PUBG",
+    category: "BGMI Gaming",
+    title: "Battlegrounds",
     src: "/images/pubg.webp",
-    content: <DummyContent />,
+    content: <BGMI />,
+    rules: <BGMIRules />,
+    heads: <BGMIHeads />
   },
   {
-    category: "E Football",
-    title: "Techverse Football",
+    category: "PES Gaming",
+    title: "E Football",
     src: "/images/football.jpg",
-    content: <DummyContent />,
+    content: <Football />,
+    rules: <FootballRules />,
+    heads: <FootballHeads />
   },
   {
     category: "8 Ball Pool",
     title: "Techverse Pool",
     src: "/images/8ball.jpg",
-    content: <DummyContent />,
+    content: <Ball />,
+    rules: <BallRules />,
+    heads: <BallHeads />
   },
-  {
-    category: "Indoor Chess",
-    title: "Techverse Gambits",
-    src: "/images/chess2.webp",
-    content: <DummyContent />,
-  },
+  // {
+  //   category: "Indoor Chess",
+  //   title: "Techverse Gambits",
+  //   src: "/images/chess2.webp",
+  //   content: <DummyContent />,
+  //   rules: <SuperCoderRules />,
+  //   heads: <SuperCoderHeads />
+  // },
 
-  {
-    category: "Indoor Carrom",
-    title: "Techverse Strikers",
-    src: "/images/carrom2.webp",
-    content: <DummyContent />,
-  },
+  // {
+  //   category: "Indoor Carrom",
+  //   title: "Techverse Strikers",
+  //   src: "/images/carrom2.webp",
+  //   content: <DummyContent />,
+  //   rules: <SuperCoderRules />,
+  //   heads: <SuperCoderHeads />
+  // },
   {
     category: "Photography",
-    title: "Techverse Shutters",
+    title: "Shutter Showcase",
     src: "/images/photo2.webp",
-    content: <DummyContent />,
+    content: <Photo />,
+    rules: <PhotoRules />,
+    heads: <PhotoHeads />
   },
   {
     category: "Treasure Hunt",
-    title: "Techverse Explorers",
+    title: "Hunt for the One Piece",
     src: "/images/treasure2.jpg",
-    content: <DummyContent />,
+    content: <TreasureHunt />,
+    rules: <TreasureHuntRules />,
+    heads: <TreasureHuntHeads />
   }
 ];
