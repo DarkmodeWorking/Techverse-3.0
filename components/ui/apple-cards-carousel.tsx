@@ -233,9 +233,9 @@ export const Card = ({
               >
                 {card.title}
               </motion.p>
-              <div className="py-5">{card.content}</div>
+              <div className="py-10">{card.content}</div>
               <div className="py-0">{card.rules}</div>
-              <div className="py-5">{card.heads}</div>
+              <div className="py-10">{card.heads}</div>
             </motion.div>
           </div>
         )}
