@@ -5,7 +5,7 @@ export function PhotoRules() {
         className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
       >
         <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
-          Rules and Regulations: <br />
+          <b>Rules and Regulations:</b><br />
           <br />1. Submission will not be accepted once the deadline lapses
           <br />2. Images should not be longer than 15 mb.Photos must be in JPEJ format
           <br />3. Photos with watermarks are not eligible
