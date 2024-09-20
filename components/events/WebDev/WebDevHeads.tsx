@@ -16,12 +16,12 @@ export function WebDevHeads() {
           <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
             Event Head: Prolay Haldar <br />
             Phone: +91 91233 16324 <br />
-            Email: 
+            Email: prolayhalder2004@gmail.com
           </p>
           <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
             Co-Event Head: Mukta Das <br />
             Phone: +91 98835 85083 <br />
-            Email: 
+            Email: muktadas9904@gmail.com
           </p>
         </div>
       </div>

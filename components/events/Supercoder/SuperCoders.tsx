@@ -6,7 +6,7 @@ export function SuperCoder() {
       >
         <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
         <b>Event Description: </b><br />
-        <br />Three problem statements will be given to you. Solve the problem using any language. 
+        <br />Three problem statements will be given to you. Solve the problem using any language in the shortest time possible.
         <br /><br />Prelims: Time limit - 60 mins
         <br />1. There will be 3 questions.
         <br />2. Qualified teams will proceed to Semi Finals.
@@ -16,7 +16,7 @@ export function SuperCoder() {
         <br /><br />Finals: Time limit - 60 mins
         <br />1. There will be 3 questions.
         <br />2. Winner and Runners Up to be selected from this round.
-      </p>
+        </p>
       </div>
     );
   };

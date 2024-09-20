@@ -16,7 +16,7 @@ export function BGMIHeads() {
           <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
             Event Head: Mohok Bhanja <br />
             Phone: +91 90730 34706 <br />
-            Email: 
+            Email: mohokbhanja@gmail.com
           </p>
           <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
             Co-Event Head: Sandipan Mukhopadhyay <br />

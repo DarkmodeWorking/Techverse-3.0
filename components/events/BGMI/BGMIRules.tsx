@@ -6,9 +6,10 @@ export function BGMIRules() {
       >
         
         <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
-    <b>Rules and Regulations:</b>
-    </p>
-    <ol className="text-neutral-600 dark:text-neutral-400 text-base md:text-l font-sans max-w-3xl mx-auto">
+        <b>Rules and Regulations:</b>
+        <br /><br />
+    
+    <ol>
         <li>1. Team should consist of (4+2) members (in case of any emergency).</li>
         <li>2. Only one member of a team (Squad or Duo) has to pay the entry fee for the match or tournaments.</li>
         <li>3. If you fail to attend the match in time, you will not get any refund.</li>
@@ -25,6 +26,7 @@ export function BGMIRules() {
         <li>14. Every player&apos;s app version will be checked by volunteers before they enter the room.</li>
         <li>15. Misbehaving with the management will lead to disqualification.</li>
     </ol>
+    </p>
         </div>
     );
   };

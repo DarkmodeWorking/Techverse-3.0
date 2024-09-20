@@ -97,7 +97,7 @@ export function Events() {
 const data = [
   {
     category: "Model Display",
-    title: "Model Display*",
+    title: "Model Display",
     src: "/images/modeldisplay.jpg",
     content: <ModelDisplay />,
     rules: <ModelDisplayRules />,
@@ -113,7 +113,7 @@ const data = [
   },
   {
     category: "Poster Presentation", // artisans
-    title: "Poster Presentation*",
+    title: "Poster Presentation",
     src: "/images/poster.jpg",
     content: <Poster />,
     rules: <PosterRules />,
@@ -168,8 +168,8 @@ const data = [
     heads: <FootballHeads />
   },
   {
-    category: "8 Ball Pool",
-    title: "Techverse Pool",
+    category: "8 Ball Pool Gaming",
+    title: "Play with my Balls",
     src: "/images/8ball.jpg",
     content: <Ball />,
     rules: <BallRules />,
@@ -202,7 +202,7 @@ const data = [
   },
   {
     category: "Treasure Hunt",
-    title: "Hunt for the One Piece",
+    title: "Run for the One Piece",
     src: "/images/treasure2.jpg",
     content: <TreasureHunt />,
     rules: <TreasureHuntRules />,

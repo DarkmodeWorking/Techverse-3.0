@@ -21,7 +21,7 @@ export function LapRaceHeads() {
           <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
             Co-Event Head: Surajit Paul <br />
             Phone: +91 90648 38737 <br />
-            Email: 
+            Email: surajitpaul1304@gmail.com
           </p>
         </div>
       </div>

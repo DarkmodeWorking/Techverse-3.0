@@ -29,7 +29,7 @@ export function LapRaceRules() {
             </li>
           </ol>
 
-          <h2><b>Game Rules:</b></h2>
+          <br /><h2><b>Game Rules:</b></h2>
           <ol>
             <li>
              1. 1 trial and 1 final chance will be given to the participants.
@@ -51,7 +51,7 @@ export function LapRaceRules() {
             </li>
           </ol>
 
-          <h2><b>General Rules:</b></h2>
+          <br /><h2><b>General Rules:</b></h2>
           <ol>
             <li>
             1.  Any ill-behavior or intentional damage to the arena will result in disqualification.
