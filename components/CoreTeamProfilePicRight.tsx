@@ -34,14 +34,14 @@ const people = [
   {
     id: 5,
     name: "Mohok Bhanja",
-    designation: "Explorer",
+    designation: "Gaming Co-ordinator",
     image:
       "/coreTeam/Mohok1.png",
   },
   {
     id: 6,
     name: "undefined",
-    designation: "Marketing Head",
+    designation: "LOLLLLL",
     image:
       "/coreTeam/Nanda.png",
   },
