@@ -26,14 +26,14 @@ const people = [
   {
     id: 4,
     name: "Riya Banerjee",
-    designation: "SPOC",
+    designation: "Decorations",
     image:
       "/coreTeam/Riya.png"
     },
   {
     id: 5,
     name: "Tiyasha Kuri",
-    designation: "Decoration",
+    designation: "Marketing Co-ordinator",
     image:
       "/coreTeam/Triyasha.png",
   },
