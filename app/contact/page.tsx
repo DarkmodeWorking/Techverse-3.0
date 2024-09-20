@@ -3,7 +3,7 @@ import { CoreTeamProfilePicLeft } from "@/components/CoreTeamProfilePicLeft";
 import { CoreTeamProfilePicRight } from "@/components/CoreTeamProfilePicRight";
 export default function ContactPage() {
     return (
-        <div className="relative h-screen w-full">
+        <div className="relative w-full">
             {/* CoreTeamProfilePic positioned at the top left corner, hidden on mobile */}
             <div className="absolute top-20 left-8 z-10 hidden md:block">
                 <CoreTeamProfilePicLeft/>
@@ -14,7 +14,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="mb-8">
+            <div className="mt-9 mb-8">
                 <ContactForm />
             </div>
         </div>

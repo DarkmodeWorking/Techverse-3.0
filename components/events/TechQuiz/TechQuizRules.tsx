@@ -8,8 +8,9 @@ export function TechQuizRules() {
         <b>Rules and Regulations</b>
           
           <ol>
+            <br />
+            <b>Grouping Details:</b>
             <br /><li>
-            <h2>GROUPING DETAILS:</h2>
               Registration could be done on the website as well as at the offline registration desk.
             </li>
             <li>
@@ -24,7 +25,7 @@ export function TechQuizRules() {
             Tech quiz will comprise of two rounds: the first round will be the Qualifier Round and after that, the Final Round.
           </p>
             <br />
-          <h3>QUALIFIER ROUND:</h3>
+          <b><h3>Qualifier Round:</h3></b>
           <ol>
             <li>
               In this round, there will be 20 questions, and 1 minute will be allotted for each question, depending for the finals.
@@ -34,7 +35,7 @@ export function TechQuizRules() {
             </li>
           </ol>
           <br />
-          <h3>FINAL ROUND:</h3>
+          <b><h3>Final Round:</h3></b>
           <ol>
             <li>
               Finalists would face questions on various interesting domains.
@@ -50,7 +51,7 @@ export function TechQuizRules() {
             </li>
           </ol>
           <br />
-          <h2>OTHER DETAILS:</h2>
+          <h2><b>Other Details:</b></h2>
           <p>
             Participants from schools are requested to bring their institutional ID cards.
           </p>

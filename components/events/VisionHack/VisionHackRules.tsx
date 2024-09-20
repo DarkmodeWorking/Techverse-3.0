@@ -5,7 +5,7 @@ export function VisionHackRules() {
         className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
       >
         <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
-        <b>Hackathon Rules and Guidelines</b>
+        <b>Hackathon Rules and Guidelines:</b>
         <ol>
         <li>
           <br /><b>Team Formation:</b>
@@ -16,7 +16,7 @@ export function VisionHackRules() {
           </ul>
         </li>
         <li>
-          <b>Allowed Frameworks and Languages:</b>
+          <br /><b>Allowed Frameworks and Languages:</b>
           <ul>
             <li>Participants are free to use any programming languages or frameworks that support the development of their solution.</li>
             <li>Tools, libraries, and frameworks that assist in the development process are encouraged.</li>
@@ -24,7 +24,7 @@ export function VisionHackRules() {
           </ul>
         </li>
         <li>
-          <b>Themes and Topics:</b>
+          <br /><b>Themes and Topics:</b>
           <ul>
             <li>The themes or topics for the hackathon will be announced on the day of the event.</li>
             <li>Themes will align with the overall vision of the hackathon and will cover a range of domains, aiming to inspire innovative solutions.</li>
@@ -32,7 +32,7 @@ export function VisionHackRules() {
           </ul>
         </li>
         <li>
-          <b>Time and Development:</b>
+          <br /><b>Time and Development:</b>
           <ul>
             <li>Day 1 will be dedicated to product development. Teams will have 7 hours to work on their solution.</li>
             <li>Day 2 will focus on presentations. Each team will have a scheduled time slot to present their project to the judges.</li>
