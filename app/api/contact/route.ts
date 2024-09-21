@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
 
   const mailOptions = {
     from: email,
-    to: 'tikludas01@gmail.com', // replace with your receiving email address
+    to: 'techverse.techfestofficial@gmail.com', // replace with your receiving email address
     subject: `New Message from ${firstname} ${lastname}`,
     html: createEmailTemplate(firstname, lastname, email, message),
   };
