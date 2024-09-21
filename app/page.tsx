@@ -1,6 +1,7 @@
 import { Earth } from "@/components/Earth";
 import { Events } from "@/components/Events";
 import Footer from "@/components/Footer";
+import { Gallery } from "@/components/Gallery";
 import { Hero } from "@/components/Hero";
 import { NavbarDemo } from "@/components/NavbarDemo";
 import Image from "next/image"
@@ -14,7 +15,7 @@ export default function Home() {
       <Hero/>
       <Earth/>
       <Events/>
-     
+      <Gallery/>
     </main>
     </div>
   );
