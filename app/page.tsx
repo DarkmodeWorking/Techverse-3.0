@@ -15,6 +15,7 @@ export default function Home() {
       <Hero/>
       <Earth/>
       <Events/>
+      <p className="text-white text-center text-2xl md:text-3xl my-16 font-serif mx-16">The Journey So Far: Techverse Through the Lens</p>
       <Gallery/>
     </main>
     </div>

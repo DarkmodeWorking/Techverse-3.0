@@ -14,20 +14,20 @@ interface EventData {
 
 const eventData: EventData[] = [
   {
-    name: 'Run for The One Piece (Treasure Hunt)',
-    teamPrice:300,
-    hasSolo: false,
-    hasTeam: true,
-    minTeamMembers: 3,
-    maxTeamMembers: 6,
-  },
-  {
     name: 'Model Display',
     soloPrice: 100,
     hasSolo: true,
     hasTeam: false,
     minTeamMembers:2,
     maxTeamMembers: 5, // Solo only event, no teamPrice
+  },
+  {
+    name: 'Vision Hack (Mini Hackathon)',
+    teamPrice: 300,
+    hasSolo: false,
+    hasTeam: true,
+    minTeamMembers: 3,
+    maxTeamMembers: 6,
   },
   {
     name: 'Poster Presentation',
@@ -39,13 +39,13 @@ const eventData: EventData[] = [
     maxTeamMembers: 3,
   },
   {
-    name: 'Super Coders',
-    soloPrice: 60,
-    teamPrice: 100,
+    name: 'Quiz of Thrones',
+    soloPrice: 250,
+    teamPrice: 400,
     hasSolo: true,
     hasTeam: true,
-    maxTeamMembers: 2,
     minTeamMembers: 2,
+    maxTeamMembers: 3,
   },
   {
     name: 'Web Devs',
@@ -57,8 +57,57 @@ const eventData: EventData[] = [
     minTeamMembers: 2,
   },
   {
-    name: 'Vision Hack (Mini Hackathon)',
-    teamPrice: 300,
+    name: 'Super Coders',
+    soloPrice: 60,
+    teamPrice: 100,
+    hasSolo: true,
+    hasTeam: true,
+    maxTeamMembers: 2,
+    minTeamMembers: 2,
+  },
+  {
+    name: 'Speed Drift',
+    teamPrice:300,
+    hasSolo: false,
+    hasTeam: true,
+    minTeamMembers: 3,
+    maxTeamMembers: 6,
+  },
+  {
+    name: 'Battlegrounds',
+    teamPrice:300,
+    hasSolo: false,
+    hasTeam: true,
+    minTeamMembers: 3,
+    maxTeamMembers: 6,
+  },
+  {
+    name: 'E Football',
+    teamPrice:300,
+    hasSolo: false,
+    hasTeam: true,
+    minTeamMembers: 3,
+    maxTeamMembers: 6,
+  },
+  {
+    name: '8 Ball Pool',
+    teamPrice:300,
+    hasSolo: false,
+    hasTeam: true,
+    minTeamMembers: 3,
+    maxTeamMembers: 6,
+  },
+  {
+    name: 'Shutter Showcase',
+    teamPrice:300,
+    hasSolo: false,
+    hasTeam: true,
+    minTeamMembers: 3,
+    maxTeamMembers: 6,
+  },
+  {
+    name: 'Run for The One Piece (Treasure Hunt)',
+    teamPrice:300,
     hasSolo: false,
     hasTeam: true,
     minTeamMembers: 3,
@@ -98,8 +147,8 @@ const RegisterPage: React.FC = () => {
       <div className="relative z-10 w-full max-w-md bg-gray-900 text-white p-6 rounded-lg shadow-lg">
         
         <header className="text-center mb-10">
-          <h1 className="text-4xl font-bold mb-2">Techfest Registration</h1>
-          <p className="text-xl">Select an event and participation type to register</p>
+          <h1 style={{fontFamily: 'CustomFont'}} className="text-4xl font-bold mb-10">Techverse 3.0</h1>
+          <p className="text-md">Select an event and participation type to register</p>
         </header>
 
         <div className="w-full">
