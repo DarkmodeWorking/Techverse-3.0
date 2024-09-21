@@ -2,7 +2,6 @@
 "use client";
 import React, { useState } from 'react';
 import { StarBackground } from '@/components/StarBackground';
-
 interface EventData {
   name: string;
   soloPrice?: number; // Price for solo participation (optional)
