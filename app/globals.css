@@ -21,15 +21,18 @@
   font-weight: normal;
   font-style: normal;
 }
-/* @font-face {
+@font-face {
   font-family: 'AnotherFont';
-  src: url('/Fonts/SpaceComics.ttf') format('truetype');
+  src: url('/Fonts/Methanerse.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-} */
+}
 
 body {
   font-family: 'CustomFont', sans-serif; /* Apply the font to the body */
+}
+body {
+  font-family: 'AnotherFont', sans-serif; /* Apply the font to the body */
 }
 
 
