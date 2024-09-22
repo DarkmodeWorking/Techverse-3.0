@@ -14,10 +14,8 @@ export default function AboutPage() {
        <AboutPageHero/>
        {/* <StarBackground/> */}
        {/* <CoreTeam/> */}
-<<<<<<< Updated upstream
-=======
+       {/* <CoreTeam/> */}
        <CoreTeamAlt />
->>>>>>> Stashed changes
       </div>
       </div>
     );
