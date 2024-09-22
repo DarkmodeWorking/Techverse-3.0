@@ -40,10 +40,10 @@ const people = [
   },
   {
     id: 6,
-    name: "undefined",
-    designation: "LOLLLLL",
+    name: "Anurag Bhattacharjee",
+    designation: "Developer",
     image:
-      "/coreTeam/Nanda.png",
+      "/coreTeam/github.png",
   },
   {
     id: 7,

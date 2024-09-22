@@ -58,7 +58,7 @@ export function Events() {
 const data = [
   {
     category: "Model Display",
-    title: "Model Display",
+    title: "Model Matrix",
     src: "/images/modeldisplay.jpg",
     content: <ModelDisplay />,
     rules: <ModelDisplayRules />,
@@ -74,7 +74,7 @@ const data = [
   },
   {
     category: "Poster Presentation", // artisans
-    title: "Poster Presentation",
+    title: "Canva Fusion",
     src: "/images/poster.jpg",
     content: <Poster />,
     rules: <PosterRules />,
@@ -114,7 +114,7 @@ const data = [
   },
   {
     category: "BGMI Gaming",
-    title: "Battlegrounds",
+    title: "Ground Zero",
     src: "/images/pubg.webp",
     content: <BGMI />,
     rules: <BGMIRules />,
@@ -122,15 +122,15 @@ const data = [
   },
   {
     category: "PES Gaming",
-    title: "E Football",
+    title: "Digital Kickoff",
     src: "/images/football.jpg",
     content: <Football />,
     rules: <FootballRules />,
     heads: <FootballHeads />
   },
   {
-    category: "billiards",
-    title: "8 Ball Pool",
+    category: "8 Ball Pool Gaming",
+    title: "Billiards Blitz",
     src: "/images/8ball.jpg",
     content: <Ball />,
     rules: <BallRules />,

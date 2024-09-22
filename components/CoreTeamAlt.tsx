@@ -21,14 +21,14 @@ const content = [
   },
   {
     title: "Convener",
-    description: "Zishan Khan Chowdhury",
+    description: "Zishan Khan ",
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
         <Image
           src="/coreTeam/Zishan.png"
           fill
           className="rounded-full object-cover"
-          alt="Zishan Khan Chowdhury - Convener"
+          alt="Zishan Khan  - Convener"
         />
       </div>
     ),
@@ -186,13 +186,27 @@ const content = [
       </div>
     ),
   },
+  {
+    title: "Sorry Bhai :)",
+    description: "Sayan Acharya",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/coreTeam/default.png"
+          fill
+          className="rounded-full object-cover"
+          alt="Sayan Acharya - RickRoll"
+        />
+      </div>
+    ),
+  },
   
 ];
 
 export function CoreTeamAlt() {
   return (
     <div>
-        <p style={{ fontFamily: 'CustomFont' }} className="text-6xl font-mono text-center"> Meet the Core Team </p>
+        <p style={{ fontFamily: 'CustomFont' }} className="text-3xl sm:text-6xl font-mono text-center"> Meet the Core Team </p>
         <br /><br />
         <div className="p-10">
             <StickyScroll  content={content} contentClassName="custom-class" />
