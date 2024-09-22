@@ -90,7 +90,7 @@ const data = [
   },
   {
     category: "Website Development",
-    title: "Web Devs",
+    title: "Lord of the Webs",
     src: "/images/website.webp",
     content: <WebDev />,
     rules: <WebDevRules />,
@@ -129,8 +129,8 @@ const data = [
     heads: <FootballHeads />
   },
   {
-    category: "8 Ball Pool Gaming",
-    title: "Play with my Balls",
+    category: "billiards",
+    title: "8 Ball Pool",
     src: "/images/8ball.jpg",
     content: <Ball />,
     rules: <BallRules />,
