@@ -9,7 +9,7 @@ const Footer = () => {
       <div className='sm:flex'>
         <div className='basis-[60%] flex mb-10'>
           <Logo />
-          <p> 
+          <div> 
             <b>Venue:</b> <br /> 
             <p className='text-neutral-500'>
             Guru Nanak Institute of Technology <br />
@@ -21,7 +21,7 @@ const Footer = () => {
             November 4 - 5
             </p>
 
-          </p>
+          </div>
         </div>
         <div className='basis-[40%]'>
           <WebTeam />
