@@ -2,6 +2,7 @@
 
 import { AboutPageHero } from "@/components/AboutPageHero";
 import { CoreTeam } from "@/components/CoreTeam";
+import { CoreTeamAlt } from "@/components/CoreTeamAlt";
 import { NavbarDemo } from "@/components/NavbarDemo";
 import { StarBackground } from "@/components/StarBackground";
 import { div } from "framer-motion/client";
@@ -13,6 +14,10 @@ export default function AboutPage() {
        <AboutPageHero/>
        {/* <StarBackground/> */}
        {/* <CoreTeam/> */}
+<<<<<<< Updated upstream
+=======
+       <CoreTeamAlt />
+>>>>>>> Stashed changes
       </div>
       </div>
     );
