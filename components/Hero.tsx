@@ -20,7 +20,7 @@ export function Hero() {
           TECHVERSE 3.0
         </h3>
         <p style={{fontFamily: 'CustomFont'}} className="text-white text-m mt-10 text-center font-mono ">
-          A departmental tech fest organized at <br /> Guru Nanak Institute of Technology by <br /> Department of Computer Science Engineering & Bsc
+          A departmental tech fest organized at <br /> Guru Nanak Institute of Technology by <br /> Department of CSE & BSC
         </p>
       </Vortex>
     </div>

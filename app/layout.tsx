@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <NavbarDemo />
+        <div className="hidden sm:block">
         <Logo /> 
+        </div>
         <BrochureButton /> {/* Brochure button added here */}
         <main>{children}</main>
         <Footer />
