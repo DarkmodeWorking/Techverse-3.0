@@ -45,7 +45,7 @@ export function CoreTeam() {
           // className="bg-[url('/coreTeam/sudiptatest.png')] bg-cover bg-center w-full break-words whitespace-normal leading-tight"
         />
         <TextRevealCard
-          text="Undefined"
+          text="Triyasha Kuri"
           revealText="Marketing Head"
           className="w-full break-words whitespace-normal leading-tight"
         />
@@ -66,7 +66,7 @@ export function CoreTeam() {
         />
         <TextRevealCard
           text="Riya Banerjee"
-          revealText="SPOC"
+          revealText="Decorations"
           className="w-full break-words whitespace-normal leading-tight"
         />
         <TextRevealCard
@@ -77,12 +77,12 @@ export function CoreTeam() {
         />
            <TextRevealCard
           text="Mohok Bhanja"
-          revealText="Explorer"
+          revealText="Gaming Co-ordinator"
           className="w-full break-words whitespace-normal leading-tight"
         />
            <TextRevealCard
-          text="Tiyasha Kuri"
-          revealText="Decorations"
+          text="Anurag Bhattacharjee"
+          revealText="Developer"
           className=" w-full break-words whitespace-normal leading-tight"
         />
          <TextRevealCard

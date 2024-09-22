@@ -12,7 +12,7 @@ export default function AboutPage() {
         <div className="flex min-h-screen flex-col items-center justify-between">
        <AboutPageHero/>
        {/* <StarBackground/> */}
-       <CoreTeam/>
+       {/* <CoreTeam/> */}
       </div>
       </div>
     );
