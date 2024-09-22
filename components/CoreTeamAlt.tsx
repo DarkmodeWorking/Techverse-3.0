@@ -186,6 +186,20 @@ const content = [
       </div>
     ),
   },
+  {
+    title: "Sorry Bhai :)",
+    description: "Sayan Acharya",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/coreTeam/default.png"
+          fill
+          className="rounded-full object-cover"
+          alt="Sayan Acharya - RickRoll"
+        />
+      </div>
+    ),
+  },
   
 ];
 
