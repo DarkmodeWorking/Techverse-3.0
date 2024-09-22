@@ -7,20 +7,6 @@ import { div } from "framer-motion/client";
 const content = [
   {
     title: "Convener",
-    description: "Zishan Khan Chowdhury",
-    content: (
-      <div className="h-full w-full flex items-center justify-center text-white">
-        <Image
-          src="/coreTeam/Zishan.png"
-          fill
-          className="rounded-full object-cover"
-          alt="Zishan Khan Chowdhury - Convener"
-        />
-      </div>
-    ),
-  },
-  {
-    title: "Convener",
     description: "Shampurna Rakshit",
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
@@ -29,6 +15,20 @@ const content = [
           fill
           className="rounded-full object-cover"
           alt="Shampurna Rakshit - Convener"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Convener",
+    description: "Zishan Khan Chowdhury",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/coreTeam/Zishan.png"
+          fill
+          className="rounded-full object-cover"
+          alt="Zishan Khan Chowdhury - Convener"
         />
       </div>
     ),
@@ -62,6 +62,34 @@ const content = [
     ),
   },
   {
+    title: "Tech Lead",
+    description: "Nanda Lal Das",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/coreTeam/Nanda01.jpeg"
+          fill
+          className="rounded-full object-cover"
+          alt="Nanda Lal Das - Tech Lead"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Media Lead",
+    description: "Sudipta Sen",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/coreTeam/Sudipta.png"
+          fill
+          className="rounded-full object-cover"
+          alt="Sudipta Sen - Media Lead"
+        />
+      </div>
+    ),
+  },
+  {
     title: "Co-Ordinator",
     description: "Aniket Das",
     content: (
@@ -90,35 +118,35 @@ const content = [
     ),
   },
   {
-    title: "Tech Lead",
-    description: "Nanda Lal Das",
+    title: "Co-Ordinator",
+    description: "Ankita Ghosh",
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
         <Image
-          src="/coreTeam/Nanda.png"
+          src="/coreTeam/Ankita.png"
           fill
           className="rounded-full object-cover"
-          alt="Nanda Lal Das - Tech Lead"
+          alt="Arghyadip Roy - Co-Ordinator"
         />
       </div>
     ),
   },
   {
-    title: "Media Lead",
-    description: "Sudipta Sen",
+    title: "Marketing",
+    description: "Tiyasha Kuri",
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
         <Image
-          src="/coreTeam/Sudipta.png"
+          src="/coreTeam/Triyasha.png"
           fill
           className="rounded-full object-cover"
-          alt="Sudipta Sen - Media Lead"
+          alt="Tiyasha Kuri - Decorator"
         />
       </div>
     ),
   },
   {
-    title: "SPOC",
+    title: "Decorations",
     description: "Riya Banerjee",
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
@@ -127,6 +155,19 @@ const content = [
           fill
           className="rounded-full object-cover"
           alt="Riya Banerjee - SPOC"
+        />
+      </div>
+    ),
+  },{
+    title: "Gaming Admin",
+    description: "Mohok Bhanja",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/coreTeam/Mohok1.png"
+          fill
+          className="rounded-full object-cover"
+          alt="Mohok Bhanja - Gaming Co-Ordinator"
         />
       </div>
     ),
@@ -145,34 +186,7 @@ const content = [
       </div>
     ),
   },
-  {
-    title: "Gaming Admin",
-    description: "Mohok Bhanja",
-    content: (
-      <div className="h-full w-full flex items-center justify-center text-white">
-        <Image
-          src="/coreTeam/Mohok1.png"
-          fill
-          className="rounded-full object-cover"
-          alt="Mohok Bhanja - Gaming Co-Ordinator"
-        />
-      </div>
-    ),
-  },
-  {
-    title: "Decorator",
-    description: "Tiyasha Kuri",
-    content: (
-      <div className="h-full w-full flex items-center justify-center text-white">
-        <Image
-          src="/coreTeam/Triyasha.png"
-          fill
-          className="rounded-full object-cover"
-          alt="Tiyasha Kuri - Decorator"
-        />
-      </div>
-    ),
-  },
+  
 ];
 
 export function CoreTeamAlt() {
