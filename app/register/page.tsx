@@ -22,6 +22,7 @@ interface FormValues {
   teamMembers: string[];
   screenShot: File | null;
 }
+
 const eventData: EventData[] = [
   {
     name: "Run for The One Piece (Treasure Hunt)",
@@ -86,7 +87,8 @@ const RegisterPage: React.FC = () => {
   // const [lastName, setLastName] = useState<string>("");
   // const [email, setEmail] = useState<string>("");
   // const [phone, setPhone] = useState<string>("");
-  const [screenShot, setScreenShot] = useState<File | null>(null);
+  const [screenShot, setScreenShot] = useState<File | null>(null)
+  
   const {
     register,
     handleSubmit,

@@ -15,7 +15,6 @@ export async function POST(req, res) {
     const { fullName, email, phone, event, teamMembers } = req.body;
 
     console.log('Form Data:', { fullName, email, phone, event, teamMembers });
-    console.log('File:', screenShot);
 
     if (!fullName || !email || !phone || !event) {
       throw new Error("Form fields are missing!");
