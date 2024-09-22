@@ -65,18 +65,18 @@ export const StickyScroll = ({
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
       // Add the custom scroll hiding class
-      className="h-96 overflow-y-auto no-scrollbar flex justify-center relative space-x-10 rounded-md p-10"
+      className="h-96 overflow-y-auto no-scrollbar flex justify-center relative space-x-8 rounded-md py-10"
       ref={ref}
     >
-      <div className="div  relative flex items-start px-4">
-        <div className="max-w-2xl">
+      <div className="div  relative flex items-start px-0">
+        <div className="max-w-4xl">
           {content.map((item, index) => (
             <div key={item.title + index} className="my-20">
               <motion.h2
               style={{ fontFamily: 'CustomFont' }}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: activeCard === index ? 1 : 0.3 }}
-                className="text-4xl font-bold text-slate-100"
+                className="text-lg sm:text-4xl font-bold text-slate-100"
               >
                 {item.title}
               </motion.h2>
@@ -84,7 +84,7 @@ export const StickyScroll = ({
 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: activeCard === index ? 1 : 0.3 }}
-                className="text-2xl text-slate-300 max-w-sm mt-10"
+                className="text-sm sm:text-2xl font-bold text-slate-500 max-w-sm mt-10"
               >
                 {item.description}
               </motion.p>
@@ -96,7 +96,7 @@ export const StickyScroll = ({
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "hidden lg:block h-48 w-48 rounded-md bg-white sticky top-10 overflow-hidden",
+          "block h-44 w-44 rounded-md bg-white sticky top-10 overflow-hidden",
           contentClassName
         )}
       >
