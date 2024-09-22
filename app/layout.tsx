@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { NavbarDemo } from "@/components/NavbarDemo";
 import Footer from "@/components/Footer";
-
+import BrochureButton from "@/components/BrochureButton"; // Import the BrochureButton component
+import Logo from "@/components/Logo";
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Techverse 3.0",
   description: "Departmental Tech fest of GNIT's CSE & Bsc",
 };
@@ -20,8 +20,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <NavbarDemo />
+        <Logo /> 
+        <BrochureButton /> {/* Brochure button added here */}
         <main>{children}</main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
