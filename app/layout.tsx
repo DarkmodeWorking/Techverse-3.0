@@ -3,7 +3,7 @@ import "./globals.css";
 import { NavbarDemo } from "@/components/NavbarDemo";
 import Footer from "@/components/Footer";
 import BrochureButton from "@/components/BrochureButton"; // Import the BrochureButton component
-
+import Logo from "@/components/Logo";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -20,6 +20,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <NavbarDemo />
+        <Logo /> 
         <BrochureButton /> {/* Brochure button added here */}
         <main>{children}</main>
         <Footer />

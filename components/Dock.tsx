@@ -52,14 +52,14 @@ export function Dock() {
       icon: (
         <IconBrandFacebook className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.facebook.com/profile.php?id=61553361925877&mibextid=qi2Omg&rdid=oj8j80g78Q49UFNy&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F9qh1D1ECmCwrdooP%2F%3Fmibextid%3Dqi2Omg",
     },
     {
       title: "Instagram",
       icon: (
         <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.instagram.com/techverse3.0?igsh=MTY4N2J4cml2czR3",
     }
   ];
   return (
