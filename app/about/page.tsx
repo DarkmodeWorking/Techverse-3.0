@@ -14,7 +14,6 @@ export default function AboutPage() {
        <AboutPageHero/>
        {/* <StarBackground/> */}
        {/* <CoreTeam/> */}
-       {/* <CoreTeam/> */}
        <CoreTeamAlt />
       </div>
       </div>
