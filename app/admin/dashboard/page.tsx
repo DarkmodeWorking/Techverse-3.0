@@ -20,7 +20,10 @@ export default function AdminDashboard() {
 
   useEffect(() => {
     const filteredData = participants.filter(participant =>
-      participant.fullName.toLowerCase().includes(searchTerm.toLowerCase())
+      participant.fullName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      participant.event.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      participant.phone.toString().includes(searchTerm) || // Convert phone number to string
+      participant.email.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredParticipants(filteredData);
   }, [searchTerm, participants]);
@@ -32,10 +35,10 @@ export default function AdminDashboard() {
 
       <input
         type="text"
-        placeholder="Search by Name"
+        placeholder="Search by Name, Event, Phone, or Email"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="mb-4 p-2 border border-gray-300 rounded w-full"
+        className="mb-4 p-2 border border-gray-300 rounded w-full bg-gray-800 text-white"
       />
 
       <table className="min-w-full bg-gray-800 text-white rounded-lg">

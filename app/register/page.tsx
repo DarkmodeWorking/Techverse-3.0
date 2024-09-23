@@ -82,7 +82,7 @@ const eventData: EventData[] = [
   },
   {
     name: "Quiz of Thrones (Tech Quiz)",
-    soloPrice:50,
+    soloPrice: 50,
     teamPrice: 150,
     hasSolo: true,
     hasTeam: true,
@@ -138,12 +138,16 @@ const RegisterPage: React.FC = () => {
     "solo"
   );
   const [teamMembers, setTeamMembers] = useState<string[]>([""]); // For team member inputs
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const [submitMessage, setSubmitMessage] = useState<string>("");
+  const [successMessage, setSuccessMessage] = useState("");
 
   const {
     register,
     handleSubmit,
     control,
     watch,
+    reset,
     formState: { errors },
   } = useForm<FormValues>();
 
@@ -169,47 +173,37 @@ const RegisterPage: React.FC = () => {
       : selectedEventData?.teamPrice;
 
       const onSubmit: SubmitHandler<FormValues> = async (data) => {
+        setIsSubmitting(true); // Disable the submit button
         const formData = new FormData();
         if (data.screenShot && data.screenShot[0]) {
-          formData.append("screenShot", data.screenShot[0]); // Only append the first file from FileList
+          formData.append("screenShot", data.screenShot[0]);
         }
-        console.log(formData.get('screenShot'));
-        
+    
         try {
-          const imageUrl = await create(formData); // Assuming create is for Cloudinary upload
-          const response = await axios.post("/api/register", {
+          const imageUrl = await create(formData);
+          await axios.post("/api/register", {
             fullName: `${data.firstName} ${data.lastName}`,
             email: data.email,
             phone: data.phone,
             event: selectedEvent,
             teamMembers,
-            screenShot: imageUrl, // Use the uploaded screenshot URL here
+            screenShot: imageUrl,
           });
-          console.log("Form submitted successfully", response.data);
+          setSuccessMessage("Form submitted successfully!");
+          reset(); // Clear the form fields
+          setTeamMembers([""]); // Reset team members
+           // Reset selected event
+          setParticipationType("solo"); // Reset participation type
         } catch (error) {
           console.error("Error submitting form", error);
+          setSuccessMessage("Error submitting form. Please try again.");
+        } finally {
+          setIsSubmitting(false); // Re-enable the submit button
         }
       };
-  //   async function submit(formData: FormData) {
-  //   const imageUrl = await create(formData);
-
-  //   const fullName = `${formData.get("firstName")} ${formData.get("lastName")}`;
-  //   const email = formData.get("email");
-  //   const phone = formData.get("phone");
-  //   const event = selectedEvent;
-  //   const screenShot = imageUrl;
     
-  //   const response = await axios.post("/api/register", {
-  //     fullName,
-  //     email,
-  //     phone,
-  //     event,
-  //     teamMembers,
-  //     screenShot,
-  //   });
 
-  //   return response.data;
-  // }
+
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-black text-white p-6">
       {/* Background Stars Component */}
@@ -217,12 +211,12 @@ const RegisterPage: React.FC = () => {
         <StarBackground/>
       </div> */}
       <div className="relative z-10 w-full max-w-md bg-zinc-900 text-white p-6 rounded-3xl shadow-lg">
-      <header className="text-center mb-10">
-        <h1 style={{fontFamily: 'CustomFont'}} className="text-4xl font-bold mb-10">
-          Techverse 3.0
-        </h1>
-        <p className="text-md">Select an event and participation type to register</p>
-      </header>
+        <header className="text-center mb-10">
+          <h1 style={{ fontFamily: 'CustomFont' }} className="text-4xl font-bold mb-10">
+            Techverse 3.0
+          </h1>
+          <p className="text-md">Select an event and participation type to register</p>
+        </header>
 
 
         <div className="w-full">
@@ -293,7 +287,7 @@ const RegisterPage: React.FC = () => {
                   placeholder="First Name"
                   className="w-full p-3 border border-zinc-700 bg-zinc-900 rounded-xl text-white"
                   {...register("firstName", {
-                    required: {value: true, message: "First name is required"},
+                    required: { value: true, message: "First name is required" },
                     minLength: {
                       value: 2,
                       message: "First name must be at least 2 characters long",
@@ -315,7 +309,7 @@ const RegisterPage: React.FC = () => {
                   placeholder="Last Name"
                   className="w-full p-3 border border-zinc-700 bg-zinc-900 rounded-xl text-white"
                   {...register("lastName", {
-                    required: {value: true, message: "Last name is required"},
+                    required: { value: true, message: "Last name is required" },
                     minLength: {
                       value: 2,
                       message: "Last name must be at least 2 characters long",
@@ -336,7 +330,7 @@ const RegisterPage: React.FC = () => {
                   placeholder="Phone Number"
                   className="w-full p-3 border border-zinc-700 bg-zinc-900 rounded-xl text-white"
                   {...register("phone", {
-                    required: {value : true, message: "Phone number is required"},
+                    required: { value: true, message: "Phone number is required" },
                     pattern: {
                       value: /^[0-9]{10}$/,
                       message: "Phone number must be exactly 10 digits",
@@ -353,7 +347,7 @@ const RegisterPage: React.FC = () => {
                   placeholder="Email Address"
                   className="w-full p-3 border border-zinc-700 bg-zinc-900 rounded-xl text-white"
                   {...register("email", {
-                    required:{value: true, message: "Email is required"},
+                    required: { value: true, message: "Email is required" },
                     pattern: {
                       value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                       message: "Invalid email format",
@@ -400,14 +394,14 @@ const RegisterPage: React.FC = () => {
                       ))}
                       {teamMembers.length <
                         (selectedEventData?.maxTeamMembers || 1) - 1 && (
-                        <button
-                          type="button"
-                          className="bg-green-500 w-full py-2 rounded-md"
-                          onClick={handleAddTeamMember}
-                        >
-                          Add Team Member
-                        </button>
-                      )}
+                          <button
+                            type="button"
+                            className="bg-green-500 w-full py-2 rounded-md"
+                            onClick={handleAddTeamMember}
+                          >
+                            Add Team Member
+                          </button>
+                        )}
                     </div>
                   )}
 
@@ -428,23 +422,35 @@ const RegisterPage: React.FC = () => {
                     type="file"
                     className="w-full p-3 border border-zinc-600 bg-zinc-900 rounded-md mt-4 text-white"
                     {...register("screenShot", {
-                      required:{ value: true, message: "Screenshot is required"},
+                      required: { value: true, message: "Screenshot is required" },
+                      validate: {
+                        lessThan10MB: (files) => {
+                          if (files && files[0]) {
+                            return files[0].size < 10 * 1024 * 1024 || "File size must be less than 10 MB";
+                          }
+                          return true; // If no file, pass validation
+                        },
+                      },
                     })}
                   />
                   {errors.screenShot && (
                     <p className="text-red-500">{errors.screenShot.message}</p>
                   )}
+
                 </div>
 
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full py-3 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 transition-colors"
+                  className={`w-full py-3 ${isSubmitting ? "bg-gray-600" : "bg-indigo-600"} text-white font-semibold rounded-md hover:bg-indigo-700 transition-colors`}
+                  disabled={isSubmitting}
                 >
-                  Submit
+                  {isSubmitting ? "Submitting..." : "Submit"}
                 </button>
               </form>
+              {successMessage && <p className="text-green-500 text-center">{successMessage}</p>}
             </>
+
           )}
         </div>
       </div>
