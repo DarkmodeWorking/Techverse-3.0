@@ -38,10 +38,10 @@ export default function AdminDashboard() {
         placeholder="Search by Name, Event, Phone, or Email"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="mb-4 p-2 border border-gray-300 rounded w-full bg-gray-800 text-white"
+        className="mb-4 p-2 border border-zinc-300 rounded w-full bg-zinc-800 text-white"
       />
 
-      <table className="min-w-full bg-gray-800 text-white rounded-lg">
+      <table className="min-w-full bg-zinc-800 text-white rounded-lg">
         <thead>
           <tr>
             <th className="py-2">Full Name</th>
