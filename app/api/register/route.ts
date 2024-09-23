@@ -1,8 +1,21 @@
 import { connectDB } from "@/dbconfig/config";
 import { NextResponse } from "next/server";
 import { Participant } from "@/models/formModel";
+
 connectDB();
-export async function POST(req, res) {
+
+export async function GET() {
+  try {
+    const participants = await Participant.find({});
+    return NextResponse.json(participants);
+  } catch (error) {
+    const errorMessage = (error instanceof Error) ? error.message : "An unknown error occurred.";
+    console.error("Error fetching participants:", errorMessage);
+    return NextResponse.json({ error: errorMessage }, { status: 500 });
+  }
+}
+
+export async function POST(req: Request) {
   try {
     const reqBody = await req.json();
     const { fullName, email, phone, event, teamMembers, screenShot } = reqBody;
@@ -17,8 +30,9 @@ export async function POST(req, res) {
     });
 
     if (!fullName || !email || !phone || !event || !screenShot) {
-      throw new Error("Form fields are missing!");
+      return NextResponse.json({ error: "Form fields are missing!" }, { status: 400 });
     }
+
     const newParticipant = await Participant.create({
       fullName,
       email,
@@ -34,7 +48,8 @@ export async function POST(req, res) {
       success: true,
     });
   } catch (error) {
-    console.error("Error:", error.message);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    const errorMessage = (error instanceof Error) ? error.message : "An unknown error occurred.";
+    console.error("Error creating participant:", errorMessage);
+    return NextResponse.json({ error: errorMessage }, { status: 500 });
   }
 }
