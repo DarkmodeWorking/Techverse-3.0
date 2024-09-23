@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
+
 import React, { useState } from "react";
 import { StarBackground } from "@/components/StarBackground";
 import { useForm, Controller, SubmitHandler } from "react-hook-form";
@@ -58,11 +59,11 @@ const eventData: EventData[] = [
     teamPrice: 100,
     hasSolo: true,
     hasTeam: true,
-    maxTeamMembers: 2,
     minTeamMembers: 2,
+    maxTeamMembers: 3,
   },
   {
-    name: "Web Devs",
+    name: "Lord of The Webs (Web Dev)",
     soloPrice: 60,
     teamPrice: 100,
     hasSolo: true,
@@ -78,7 +79,48 @@ const eventData: EventData[] = [
     minTeamMembers: 3,
     maxTeamMembers: 6,
   },
+  {
+    name: "Speed Drift",
+    teamPrice: 300,
+    hasSolo: false,
+    hasTeam: true,
+    minTeamMembers: 3,
+    maxTeamMembers: 6,
+  },
+  {
+    name: "Ground Zero (BGMI)",
+    teamPrice: 300,
+    hasSolo: false,
+    hasTeam: true,
+    minTeamMembers: 3,
+    maxTeamMembers: 6,
+  },
+  {
+    name: "Digital Kickoff (E Football)",
+    teamPrice: 300,
+    hasSolo: false,
+    hasTeam: true,
+    minTeamMembers: 3,
+    maxTeamMembers: 6,
+  },
+  {
+    name: "Billiads Blitz (8 Ball Pool)",
+    teamPrice: 300,
+    hasSolo: false,
+    hasTeam: true,
+    minTeamMembers: 3,
+    maxTeamMembers: 6,
+  },
+  {
+    name: "Shutter Showcase",
+    teamPrice: 300,
+    hasSolo: false,
+    hasTeam: true,
+    minTeamMembers: 3,
+    maxTeamMembers: 6,
+  },
 ];
+
 
 const RegisterPage: React.FC = () => {
   const [selectedEvent, setSelectedEvent] = useState<string>("");
@@ -165,12 +207,13 @@ const RegisterPage: React.FC = () => {
         <StarBackground/>
       </div> */}
       <div className="relative z-10 w-full max-w-md bg-gray-900 text-white p-6 rounded-lg shadow-lg">
-        <header className="text-center mb-10">
-          <h1 className="text-4xl font-bold mb-2">Techfest Registration</h1>
-          <p className="text-xl">
-            Select an event and participation type to register
-          </p>
-        </header>
+      <header className="text-center mb-10">
+        <h1 style={{fontFamily: 'CustomFont'}} className="text-4xl font-bold mb-10">
+          Techverse 3.0
+        </h1>
+        <p className="text-md">Select an event and participation type to register</p>
+      </header>
+
 
         <div className="w-full">
           <h2 className="text-2xl font-semibold mb-4">Choose Your Event</h2>

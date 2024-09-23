@@ -2,6 +2,7 @@
 
 import { AboutPageHero } from "@/components/AboutPageHero";
 import { CoreTeam } from "@/components/CoreTeam";
+import { CoreTeamAlt } from "@/components/CoreTeamAlt";
 import { NavbarDemo } from "@/components/NavbarDemo";
 import { StarBackground } from "@/components/StarBackground";
 import { div } from "framer-motion/client";
@@ -12,7 +13,8 @@ export default function AboutPage() {
         <div className="flex min-h-screen flex-col items-center justify-between">
        <AboutPageHero/>
        {/* <StarBackground/> */}
-       <CoreTeam/>
+       {/* <CoreTeam/> */}
+       <CoreTeamAlt />
       </div>
       </div>
     );

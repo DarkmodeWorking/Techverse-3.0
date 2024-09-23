@@ -46,7 +46,7 @@ function Navbar({ className }: { className?: string }) {
         <Menu setActive={setActive}>
           <HoveredLink href="/" onClick={() => setIsOpen(false)}>Home</HoveredLink>
           <HoveredLink href="/about" onClick={() => setIsOpen(false)}>About</HoveredLink>
-          {/* <HoveredLink href="#" onClick={(e: React.MouseEvent<Element, MouseEvent>) => { handleScrollToEvents(e); setIsOpen(false); }}>Events</HoveredLink> */}
+          <HoveredLink href="/register" onClick={() => setIsOpen(false)}>Register</HoveredLink>
           <HoveredLink href="/contact" onClick={() => setIsOpen(false)}>Contact</HoveredLink>
         </Menu>
       </motion.div>
