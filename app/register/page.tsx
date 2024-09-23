@@ -23,7 +23,7 @@ interface FormValues {
   email: string;
   participationType: "solo" | "team";
   teamMembers: string[];
-  screenShot: File | null;
+  screenShot: FileList | null;
 }
 
 const eventData: EventData[] = [
@@ -115,45 +115,49 @@ const RegisterPage: React.FC = () => {
     participationType === "solo"
       ? selectedEventData?.soloPrice
       : selectedEventData?.teamPrice;
-      // const onSubmit: SubmitHandler<FormValues> = async (data) => {
-      //   const formData = new FormData();
-      //   formData.append("fullName", `${data.firstName} ${data.lastName}`);
-      //   formData.append("phone", data.phone);
-      //   formData.append("email", data.email);
-      //   formData.append("event", selectedEvent);
-      //   formData.append("teamMembers", JSON.stringify(teamMembers));
-    
-      //   if (data.screenShot) {
-      //     formData.append("screenShot", data.screenShot);
-      //   }
-      //   try {
-      //     const response = await axios.post("/api/register", formData);
-      //     console.log("Form submitted successfully", data);
-      //   } catch (error) {
-      //     console.error("Error submitting form", error);
-      //   }
-      // };
-  
-    async function submit(formData: FormData) {
-    const imageUrl = await create(formData);
 
-    const fullName = `${formData.get("firstName")} ${formData.get("lastName")}`;
-    const email = formData.get("email");
-    const phone = formData.get("phone");
-    const event = selectedEvent;
-    const screenShot = imageUrl;
-    
-    const response = await axios.post("/api/register", {
-      fullName,
-      email,
-      phone,
-      event,
-      teamMembers,
-      screenShot,
-    });
+      const onSubmit: SubmitHandler<FormValues> = async (data) => {
+        const formData = new FormData();
+        if (data.screenShot && data.screenShot[0]) {
+          formData.append("screenShot", data.screenShot[0]); // Only append the first file from FileList
+        }
+        console.log(formData.get('screenShot'));
+        
+        try {
+          const imageUrl = await create(formData); // Assuming create is for Cloudinary upload
+          const response = await axios.post("/api/register", {
+            fullName: `${data.firstName} ${data.lastName}`,
+            email: data.email,
+            phone: data.phone,
+            event: selectedEvent,
+            teamMembers,
+            screenShot: imageUrl, // Use the uploaded screenshot URL here
+          });
+          console.log("Form submitted successfully", response.data);
+        } catch (error) {
+          console.error("Error submitting form", error);
+        }
+      };
+  //   async function submit(formData: FormData) {
+  //   const imageUrl = await create(formData);
 
-    return response.data;
-  }
+  //   const fullName = `${formData.get("firstName")} ${formData.get("lastName")}`;
+  //   const email = formData.get("email");
+  //   const phone = formData.get("phone");
+  //   const event = selectedEvent;
+  //   const screenShot = imageUrl;
+    
+  //   const response = await axios.post("/api/register", {
+  //     fullName,
+  //     email,
+  //     phone,
+  //     event,
+  //     teamMembers,
+  //     screenShot,
+  //   });
+
+  //   return response.data;
+  // }
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-black text-white p-6">
       {/* Background Stars Component */}
@@ -229,7 +233,7 @@ const RegisterPage: React.FC = () => {
                 </div>
               </div>
 
-              <form action={submit} className="flex flex-col gap-4">
+              <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
                 {/* First Name */}
                 <input
                   type="text"
