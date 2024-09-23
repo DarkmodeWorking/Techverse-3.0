@@ -206,7 +206,7 @@ const RegisterPage: React.FC = () => {
       {/* <div className="absolute inset-0 z-10">
         <StarBackground/>
       </div> */}
-      <div className="relative z-10 w-full max-w-md bg-gray-900 text-white p-6 rounded-lg shadow-lg">
+      <div className="relative z-10 w-full max-w-md bg-zinc-900 text-white p-6 rounded-3xl shadow-lg">
       <header className="text-center mb-10">
         <h1 style={{fontFamily: 'CustomFont'}} className="text-4xl font-bold mb-10">
           Techverse 3.0
@@ -218,7 +218,7 @@ const RegisterPage: React.FC = () => {
         <div className="w-full">
           <h2 className="text-2xl font-semibold mb-4">Choose Your Event</h2>
           <select
-            className="w-full p-3 border border-gray-700 bg-gray-800 rounded-md mb-6 text-white"
+            className="w-full p-3 border border-zinc-700 bg-zinc-800 rounded-xl mb-6 text-white"
             value={selectedEvent}
             onChange={(e) => {
               setSelectedEvent(e.target.value);
@@ -245,7 +245,7 @@ const RegisterPage: React.FC = () => {
                 <p className="text-center mb-2">
                   Event Price: ₹{calculatedPrice}
                 </p>
-                <p className="text-center text-sm text-gray-400 mb-4">
+                <p className="text-center text-sm text-zinc-400 mb-4">
                   Choose your participation type
                 </p>
 
@@ -281,7 +281,7 @@ const RegisterPage: React.FC = () => {
                 <input
                   type="text"
                   placeholder="First Name"
-                  className="w-full p-3 border border-gray-700 bg-gray-900 rounded-md text-white"
+                  className="w-full p-3 border border-zinc-700 bg-zinc-900 rounded-xl text-white"
                   {...register("firstName", {
                     required: {value: true, message: "First name is required"},
                     minLength: {
@@ -303,7 +303,7 @@ const RegisterPage: React.FC = () => {
                 <input
                   type="text"
                   placeholder="Last Name"
-                  className="w-full p-3 border border-gray-700 bg-gray-900 rounded-md text-white"
+                  className="w-full p-3 border border-zinc-700 bg-zinc-900 rounded-xl text-white"
                   {...register("lastName", {
                     required: {value: true, message: "Last name is required"},
                     minLength: {
@@ -324,7 +324,7 @@ const RegisterPage: React.FC = () => {
                 <input
                   type="tel"
                   placeholder="Phone Number"
-                  className="w-full p-3 border border-gray-700 bg-gray-900 rounded-md text-white"
+                  className="w-full p-3 border border-zinc-700 bg-zinc-900 rounded-xl text-white"
                   {...register("phone", {
                     required: {value : true, message: "Phone number is required"},
                     pattern: {
@@ -341,7 +341,7 @@ const RegisterPage: React.FC = () => {
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="w-full p-3 border border-gray-700 bg-gray-900 rounded-md text-white"
+                  className="w-full p-3 border border-zinc-700 bg-zinc-900 rounded-xl text-white"
                   {...register("email", {
                     required:{value: true, message: "Email is required"},
                     pattern: {
@@ -358,7 +358,7 @@ const RegisterPage: React.FC = () => {
                 {participationType === "team" &&
                   selectedEventData?.minTeamMembers && (
                     <div>
-                      <p className="text-sm mb-4 text-gray-400">
+                      <p className="text-sm mb-4 text-zinc-400">
                         Add your team members (minimum{" "}
                         {selectedEventData.minTeamMembers}, up to{" "}
                         {selectedEventData.maxTeamMembers} members)
@@ -371,7 +371,7 @@ const RegisterPage: React.FC = () => {
                           <input
                             type="text"
                             placeholder={`Team Member ${index + 2} Name`}
-                            className="w-full p-3 border border-gray-700 bg-gray-900 rounded-md text-white"
+                            className="w-full p-3 border border-zinc-700 bg-zinc-900 rounded-xl text-white"
                             value={teamMembers[index]}
                             onChange={(e) => {
                               const newTeamMembers = [...teamMembers];
@@ -381,7 +381,7 @@ const RegisterPage: React.FC = () => {
                           />
                           <button
                             type="button"
-                            className="bg-red-500 px-2 py-1 rounded-md"
+                            className="bg-red-500 px-2 py-1 rounded-xl"
                             onClick={() => handleRemoveTeamMember(index)}
                           >
                             Remove
@@ -402,7 +402,7 @@ const RegisterPage: React.FC = () => {
                   )}
 
                 {/* UPI Screenshot Upload */}
-                <div className="bg-gray-700 p-4 rounded-md shadow-sm">
+                <div className="bg-zinc-700 p-4 rounded-md shadow-sm">
                   <img
                     src="/UPI.png"
                     alt="UPI QR Code"
@@ -411,12 +411,12 @@ const RegisterPage: React.FC = () => {
                   <p className="text-center mb-2">
                     Event Price: ₹{calculatedPrice}
                   </p>
-                  <p className="text-center text-sm text-gray-400">
+                  <p className="text-center text-sm text-zinc-400">
                     Please pay the amount and upload the screenshot below.
                   </p>
                   <input
                     type="file"
-                    className="w-full p-3 border border-gray-600 bg-gray-900 rounded-md mt-4 text-white"
+                    className="w-full p-3 border border-zinc-600 bg-zinc-900 rounded-md mt-4 text-white"
                     {...register("screenShot", {
                       required:{ value: true, message: "Screenshot is required"},
                     })}
