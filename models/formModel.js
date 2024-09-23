@@ -28,6 +28,6 @@ const formSchema = new Schema({
             type: String
         },
       ]
-})
+}, {timestamps: true})
 
-export const Participant = mongoose.model("Participant", formSchema)
+export const Participant = mongoose.models.Participant || mongoose.model('Participant', formSchema);

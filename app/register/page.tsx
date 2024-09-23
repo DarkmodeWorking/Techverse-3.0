@@ -4,6 +4,9 @@ import React, { useState } from "react";
 import { StarBackground } from "@/components/StarBackground";
 import { useForm, Controller, SubmitHandler } from "react-hook-form";
 import axios from "axios";
+
+import { create } from "@/lib/create";
+
 interface EventData {
   name: string;
   soloPrice?: number; // Price for solo participation (optional)
@@ -83,12 +86,7 @@ const RegisterPage: React.FC = () => {
     "solo"
   );
   const [teamMembers, setTeamMembers] = useState<string[]>([""]); // For team member inputs
-  // const [firstName, setFirstName] = useState<string>("");
-  // const [lastName, setLastName] = useState<string>("");
-  // const [email, setEmail] = useState<string>("");
-  // const [phone, setPhone] = useState<string>("");
-  const [screenShot, setScreenShot] = useState<File | null>(null)
-  
+
   const {
     register,
     handleSubmit,
@@ -117,56 +115,45 @@ const RegisterPage: React.FC = () => {
     participationType === "solo"
       ? selectedEventData?.soloPrice
       : selectedEventData?.teamPrice;
+      // const onSubmit: SubmitHandler<FormValues> = async (data) => {
+      //   const formData = new FormData();
+      //   formData.append("fullName", `${data.firstName} ${data.lastName}`);
+      //   formData.append("phone", data.phone);
+      //   formData.append("email", data.email);
+      //   formData.append("event", selectedEvent);
+      //   formData.append("teamMembers", JSON.stringify(teamMembers));
+    
+      //   if (data.screenShot) {
+      //     formData.append("screenShot", data.screenShot);
+      //   }
+      //   try {
+      //     const response = await axios.post("/api/register", formData);
+      //     console.log("Form submitted successfully", data);
+      //   } catch (error) {
+      //     console.error("Error submitting form", error);
+      //   }
+      // };
+  
+    async function submit(formData: FormData) {
+    const imageUrl = await create(formData);
 
-  // const handleSubmit = async (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   if (!screenShot) return; // Ensure a screenshot is selected
+    const fullName = `${formData.get("firstName")} ${formData.get("lastName")}`;
+    const email = formData.get("email");
+    const phone = formData.get("phone");
+    const event = selectedEvent;
+    const screenShot = imageUrl;
+    
+    const response = await axios.post("/api/register", {
+      fullName,
+      email,
+      phone,
+      event,
+      teamMembers,
+      screenShot,
+    });
 
-  //   const formData = new FormData();
-  //   formData.append("fullName", `${firstName} ${lastName}`); // Concatenate first and last name
-  //   formData.append("email", email);
-  //   formData.append("phone", phone);
-  //   formData.append("event", selectedEvent);
-  //   formData.append("teamMembers", JSON.stringify(teamMembers)); // Send team members as an array
-  //   formData.append("screenShot", screenShot); // Upload screenshot
-  //   console.log('Form Data:');
-  //   // for (let [key, value] of formData.entries()) {
-  //   //   console.log(`${key}:`, value);
-  //   // }
-  //   try {
-
-  //     const response = await axios.post("/api/register", formData, {
-  //       headers: {
-  //         "Content-Type": "multipart/form-data",
-  //       },
-  //     });
-
-  //     console.log("Form submitted successfully", response.data);
-
-  //     // Handle success (show confirmation, etc.)
-  //   } catch (error) {
-  //     console.error("Error submitting form", error);
-  //     // Handle error (show error message, etc.)
-  //   }
-  // };
-  const onSubmit: SubmitHandler<FormValues> = async (data) => {
-    const formData = new FormData();
-    formData.append("fullName", `${data.firstName} ${data.lastName}`);
-    formData.append("phone", data.phone);
-    formData.append("email", data.email);
-    formData.append("event", selectedEvent);
-    formData.append("teamMembers", JSON.stringify(teamMembers));
-
-    if (data.screenShot) {
-      formData.append("screenShot", data.screenShot);
-    }
-    try {
-      const response = await axios.post("/api/register", formData);
-      console.log("Form submitted successfully", data);
-    } catch (error) {
-      console.error("Error submitting form", error);
-    }
-  };
+    return response.data;
+  }
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-black text-white p-6">
       {/* Background Stars Component */}
@@ -242,43 +229,60 @@ const RegisterPage: React.FC = () => {
                 </div>
               </div>
 
-              <form
-                onSubmit={handleSubmit(onSubmit)}
-                className="flex flex-col gap-4"
-              >
+              <form action={submit} className="flex flex-col gap-4">
+                {/* First Name */}
                 <input
                   type="text"
                   placeholder="First Name"
                   className="w-full p-3 border border-gray-700 bg-gray-900 rounded-md text-white"
                   {...register("firstName", {
-                    required: "First name is required",
+                    required: {value: true, message: "First name is required"},
+                    minLength: {
+                      value: 2,
+                      message: "First name must be at least 2 characters long",
+                    },
+                    maxLength: {
+                      value: 30,
+                      message:
+                        "First name must be less than 30 characters long",
+                    },
                   })}
                 />
                 {errors.firstName && (
                   <p className="text-red-500">{errors.firstName.message}</p>
                 )}
 
+                {/* Last Name */}
                 <input
                   type="text"
                   placeholder="Last Name"
                   className="w-full p-3 border border-gray-700 bg-gray-900 rounded-md text-white"
                   {...register("lastName", {
-                    required: "Last name is required",
+                    required: {value: true, message: "Last name is required"},
+                    minLength: {
+                      value: 2,
+                      message: "Last name must be at least 2 characters long",
+                    },
+                    maxLength: {
+                      value: 30,
+                      message: "Last name must be less than 30 characters long",
+                    },
                   })}
                 />
                 {errors.lastName && (
                   <p className="text-red-500">{errors.lastName.message}</p>
                 )}
 
+                {/* Phone Number */}
                 <input
                   type="tel"
                   placeholder="Phone Number"
                   className="w-full p-3 border border-gray-700 bg-gray-900 rounded-md text-white"
                   {...register("phone", {
-                    required: "Phone number is required",
+                    required: {value : true, message: "Phone number is required"},
                     pattern: {
-                      value: /^[0-9]+$/,
-                      message: "Phone number is invalid",
+                      value: /^[0-9]{10}$/,
+                      message: "Phone number must be exactly 10 digits",
                     },
                   })}
                 />
@@ -286,15 +290,16 @@ const RegisterPage: React.FC = () => {
                   <p className="text-red-500">{errors.phone.message}</p>
                 )}
 
+                {/* Email Address */}
                 <input
                   type="email"
                   placeholder="Email Address"
                   className="w-full p-3 border border-gray-700 bg-gray-900 rounded-md text-white"
                   {...register("email", {
-                    required: "Email is required",
+                    required:{value: true, message: "Email is required"},
                     pattern: {
                       value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                      message: "Email address is invalid",
+                      message: "Invalid email format",
                     },
                   })}
                 />
@@ -302,6 +307,7 @@ const RegisterPage: React.FC = () => {
                   <p className="text-red-500">{errors.email.message}</p>
                 )}
 
+                {/* Team Members (conditionally rendered for team participation) */}
                 {participationType === "team" &&
                   selectedEventData?.minTeamMembers && (
                     <div>
@@ -348,6 +354,7 @@ const RegisterPage: React.FC = () => {
                     </div>
                   )}
 
+                {/* UPI Screenshot Upload */}
                 <div className="bg-gray-700 p-4 rounded-md shadow-sm">
                   <img
                     src="/UPI.png"
@@ -360,26 +367,19 @@ const RegisterPage: React.FC = () => {
                   <p className="text-center text-sm text-gray-400">
                     Please pay the amount and upload the screenshot below.
                   </p>
-                  <Controller
-                    name="screenShot"
-                    control={control}
-                    rules={{ required: "Screenshot is required" }}
-                    render={({ field }) => (
-                      <input
-                        type="file"
-                        className="w-full p-3 border border-gray-600 bg-gray-900 rounded-md mt-4 text-white"
-                        accept="image/*"
-                        onChange={(e) =>
-                          field.onChange(e.target.files?.[0] || null)
-                        }
-                      />
-                    )}
+                  <input
+                    type="file"
+                    className="w-full p-3 border border-gray-600 bg-gray-900 rounded-md mt-4 text-white"
+                    {...register("screenShot", {
+                      required:{ value: true, message: "Screenshot is required"},
+                    })}
                   />
                   {errors.screenShot && (
                     <p className="text-red-500">{errors.screenShot.message}</p>
                   )}
                 </div>
 
+                {/* Submit Button */}
                 <button
                   type="submit"
                   className="w-full py-3 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 transition-colors"
