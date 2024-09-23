@@ -187,15 +187,15 @@ const content = [
     ),
   },
   {
-    title: "Sorry Bhai :)",
+    title: "SPOC",
     description: "Sayan Acharya",
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
-        <Image
-          src="/coreTeam/default.png"
-          fill
+        <img
+          src="/coreTeam/rickroll-roll.gif"
           className="rounded-full object-cover"
-          alt="Sayan Acharya - RickRoll"
+          alt="Sayan Acharya - SPOC"
+          style={{ width: "100%", height: "100%" }} // Ensure the image fills the container
         />
       </div>
     ),
