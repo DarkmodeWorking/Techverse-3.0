@@ -17,6 +17,13 @@ const people = [
     image: "/coreTeam/Nanda4.png",
     href: "https://www.linkedin.com/in/nanda-das-7b2242243/",
   },
+  {
+    id: 3,
+    name: "Mukta Das",
+    designation: "Shadow Titan",
+    image: "/coreTeam/Mukta.jpeg",
+    href: "https://www.linkedin.com/in/mukta-das-406336288/",
+  },
 ];
 
 export function WebTeam() {

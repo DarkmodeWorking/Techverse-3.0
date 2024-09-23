@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
             <b>Timeline:</b> <br />
             <p className='text-neutral-500'>
-            November 4 - 5
+            November 5 - 6
             </p>
 
           </div>

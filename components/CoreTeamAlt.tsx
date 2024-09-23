@@ -76,7 +76,7 @@ const content = [
     ),
   },
   {
-    title: "Media Lead",
+    title: "Media Head",
     description: "Sudipta Sen",
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
@@ -84,7 +84,7 @@ const content = [
           src="/coreTeam/Sudipta.png"
           fill
           className="rounded-full object-cover"
-          alt="Sudipta Sen - Media Lead"
+          alt="Sudipta Sen - Media Head"
         />
       </div>
     ),
@@ -164,7 +164,7 @@ const content = [
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
         <Image
-          src="/coreTeam/Mohok1.png"
+          src="/coreTeam/Mohok69.jpeg"
           fill
           className="rounded-full object-cover"
           alt="Mohok Bhanja - Gaming Co-Ordinator"
