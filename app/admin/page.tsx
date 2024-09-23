@@ -27,22 +27,22 @@ export default function AdminLogin() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-900 text-white">
-      <div className="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-sm">
+    <div className="flex items-center justify-center min-h-screen bg-black text-white">
+      <div className="bg-zinc-800 p-6 rounded-lg shadow-md w-full max-w-sm">
         <h1 className="text-2xl font-semibold mb-4">Admin Login</h1>
         <input
           type="text"
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          className="w-full p-2 mb-4 border border-gray-600 bg-gray-700 text-white rounded"
+          className="w-full p-2 mb-4 border border-zinc-600 bg-zinc-700 text-white rounded"
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full p-2 mb-4 border border-gray-600 bg-gray-700 text-white rounded"
+          className="w-full p-2 mb-4 border border-zinc-600 bg-zinc-700 text-white rounded"
         />
         <button
           onClick={handleLogin}
