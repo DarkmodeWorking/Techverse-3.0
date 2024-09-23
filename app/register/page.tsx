@@ -39,7 +39,7 @@ const eventData: EventData[] = [
   },
   {
     name: "Model Matrix (Model Display)",
-    soloPrice: 100,
+    teamPrice: 100,
     hasSolo: false,
     hasTeam: true,
     minTeamMembers: 2,
