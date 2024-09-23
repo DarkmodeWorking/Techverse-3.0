@@ -8,6 +8,7 @@ import { cn } from '@/lib/utils';
 import {
   IconBrandFacebook,
   IconBrandInstagram,
+  IconBrandLinkedin,
   IconBrandX,
 } from '@tabler/icons-react';
 import Link from 'next/link';
@@ -71,7 +72,7 @@ export default function SignupFormDemo() {
           type="submit"
         >
           Send &rarr;
-          <BottomGradient />
+          <BottomGradient0 />
         </button>
         <p>{status}</p>
 
@@ -80,33 +81,33 @@ export default function SignupFormDemo() {
         <div className="flex flex-col space-y-4">
           <Link
             className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-            href="https://github.com/Tiklu01"
+            href="https://www.facebook.com/profile.php?id=61566360148718&mibextid=qi2Omg&rdid=IAtofTfWoxDjX9a5&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FqmmZ1edNbKHLpHn6%2F%3Fmibextid%3Dqi2Omg"
           >
             <IconBrandFacebook className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
             <span className="text-neutral-700 dark:text-neutral-300 text-sm">
               Facebook
             </span>
-            <BottomGradient />
+            <BottomGradient1 />
           </Link>
           <Link
             className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-            href="https://www.instagram.com/heavenly_demon_dx/"
+            href="https://www.instagram.com/__techverse__/"
           >
             <IconBrandInstagram className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
             <span className="text-neutral-700 dark:text-neutral-300 text-sm">
               Instagram
             </span>
-            <BottomGradient />
+            <BottomGradient2 />
           </Link>
           <Link
             className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-            href="https://x.com/Tikludas5"
+            href="#"
           >
-            <IconBrandX className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
+            <IconBrandLinkedin className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
             <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              X(Twitter)
+              LinkedIn
             </span>
-            <BottomGradient />
+            <BottomGradient3 />
           </Link>
         </div>
       </form>
@@ -114,10 +115,34 @@ export default function SignupFormDemo() {
   );
 }
 
-const BottomGradient = () => {
+const BottomGradient0 = () => {
   return (
     <>
-      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-green-500 to-transparent" />
+      <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+    </>
+  );
+};
+const BottomGradient1 = () => {
+  return (
+    <>
+      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
+      <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
+    </>
+  );
+};
+const BottomGradient2 = () => {
+  return (
+    <>
+      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-pink-500 to-transparent" />
+      <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
+    </>
+  );
+};
+const BottomGradient3 = () => {
+  return (
+    <>
+      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
       <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
     </>
   );
