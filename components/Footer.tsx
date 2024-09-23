@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
         <div className='basis-[40%]'>
           <WebTeam />
-          <h1 className='text-white text-xl text-center mb-10 sm:mb-0'> &copy; All rights reserved by Team Techverse </h1>
+          <h4 className='text-white text-xl text-center mb-10 sm:mb-0'> &copy; All rights reserved by Team Techverse </h4>
         </div>
       </div>
       <div className='mt-16 mb-5'>
