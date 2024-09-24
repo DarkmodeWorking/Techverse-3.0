@@ -113,7 +113,7 @@ const eventData: EventData[] = [
     hasSolo: false,
     hasTeam: true,
     minTeamMembers: 3,
-    maxTeamMembers: 3,
+    maxTeamMembers: 4,
   },
   {
     name: "Billiads Blitz (8 Ball Pool)",

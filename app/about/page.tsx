@@ -3,6 +3,7 @@
 import { AboutPageHero } from "@/components/AboutPageHero";
 import { CoreTeam } from "@/components/CoreTeam";
 import { CoreTeamAlt } from "@/components/CoreTeamAlt";
+import { TextGenerateEffectDemo } from "@/components/College";
 import { NavbarDemo } from "@/components/NavbarDemo";
 import { StarBackground } from "@/components/StarBackground";
 import { div } from "framer-motion/client";
@@ -14,6 +15,7 @@ export default function AboutPage() {
        <AboutPageHero/>
        {/* <StarBackground/> */}
        {/* <CoreTeam/> */}
+       <TextGenerateEffectDemo />
        <CoreTeamAlt />
       </div>
       </div>

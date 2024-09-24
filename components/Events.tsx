@@ -47,7 +47,7 @@ export function Events() {
 
   return (
     <div className="w-full h-full pt-20" id="events">
-      <h2  className="text-center  max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-serif text-neutral-800 dark:text-neutral-200">
+      <h2  className="text-center  max-w-7xl pl-4 mx-auto text-3xl md:text-5xl font-serif text-neutral-800 dark:text-neutral-200">
         Events
       </h2>
       <Carousel items={cards} />
@@ -113,7 +113,7 @@ const data = [
     heads: <LapRaceHeads />
   },
   {
-    category: "BGMI Gaming",
+    category: "BGMI",
     title: "Ground Zero",
     src: "/images/pubg.webp",
     content: <BGMI />,
@@ -121,7 +121,7 @@ const data = [
     heads: <BGMIHeads />
   },
   {
-    category: "PES Gaming",
+    category: "E Football",
     title: "Digital Kickoff",
     src: "/images/football.jpg",
     content: <Football />,
@@ -129,7 +129,7 @@ const data = [
     heads: <FootballHeads />
   },
   {
-    category: "8 Ball Pool Gaming",
+    category: "8 Ball Pool",
     title: "Billiards Blitz",
     src: "/images/8ball.jpg",
     content: <Ball />,
