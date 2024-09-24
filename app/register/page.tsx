@@ -47,7 +47,7 @@ const eventData: EventData[] = [
     maxTeamMembers: 5, 
   },
   {
-    name: "Poster Presentation",
+    name: "Canva Fusion (Poster Presentation)",
     // soloPrice: 100,
     teamPrice: `${100}`,
     hasSolo: false,
