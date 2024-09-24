@@ -113,8 +113,8 @@ const data = [
     heads: <LapRaceHeads />
   },
   {
-    category: "BGMI",
-    title: "Ground Zero",
+    category: "Battle Royale",
+    title: "BGMI",
     src: "/images/pubg.webp",
     content: <BGMI />,
     rules: <BGMIRules />,
