@@ -1,22 +1,19 @@
 import { useState, useEffect } from 'react';
 
 const languages: string[] = [
-  'Techverse 3.0',         // English
-  'टेकवर्स 3.0',           // Hindi
-  'تکورس 3.0',             // Urdu
+  'Techverse 3.0',      // English
+  'টেকভার্স 3.0',       // Bengali
+  'تکورس 3.0',        // Urdu
+  'टेकवर्स 3.0',         // Hindi
+  'टेक्वर्से 3.0',         // Sanskrit
+  'టెక్వర్స్ 3.0',       // Telegu
+  'டெக்வர்ஸ் 3.0',   // Tamil
+  'ടെക്‌വേർസ് 3.0', // Malayalam
+  'ಟೆಕ್ವರ್ಸ್ 3.0',      // Kannada
   'テックバース 3.0',      // Japanese
   '테크버스 3.0',           // Korean
   '技术宇宙 3.0',           // Chinese (Simplified)
   'Техверс 3.0',           // Russian
-  'تكنولوجيا 3.0',         // Arabic (alternative for tech)
-  'טֶכנווֶרס 3.0',        // Hebrew
-  'टेकवर्स 3.0',           // Marathi
-  'Τεχνοβέρσο 3.0',        // Greek
-  'Tecnoverso 3.0',        // Italian
-  'टेकवर्स 3.0',           // Nepali
-  'เทคเวิร์ส 3.0',         // Thai
-  'Техноверсум 3.0',       // Serbian
-  'ტექვერს 3.0',           // Georgian
 ];
 
 const Preloader: React.FC = () => {
