@@ -12,7 +12,7 @@ import { tr } from "framer-motion/client";
 interface EventData {
   name: string;
   soloPrice?: number; // Price for solo participation (optional)
-  teamPrice?: number; // Price for team participation (optional)
+  teamPrice?: String; // Price for team participation (optional)
   hasSolo: boolean; // Flag to indicate if solo is allowed
   hasTeam: boolean; // Flag to indicate if team is allowed
   minTeamMembers?: number; // Optional minTeamMembers
@@ -31,7 +31,7 @@ interface FormValues {
 const eventData: EventData[] = [
   {
     name: "Run for The One Piece (Treasure Hunt)",
-    teamPrice: 300,
+    teamPrice: `${170} for 3 members & ₹${200} for 4 members`,
     hasSolo: false,
     hasTeam: true,
     minTeamMembers: 3,
@@ -39,17 +39,18 @@ const eventData: EventData[] = [
   },
   {
     name: "Model Matrix (Model Display)",
-    teamPrice: 100,
-    hasSolo: false,
+    teamPrice: `${100}`,
+    soloPrice:100,
+    hasSolo: true,
     hasTeam: true,
     minTeamMembers: 2,
-    maxTeamMembers: 5, // Solo only event, no teamPrice
+    maxTeamMembers: 5, 
   },
   {
-    name: "Poster Presentation",
-    soloPrice: 100,
-    teamPrice: 300,
-    hasSolo: true,
+    name: "Canva Fusion (Poster Presentation)",
+    // soloPrice: 100,
+    teamPrice: `${100}`,
+    hasSolo: false,
     hasTeam: true,
     minTeamMembers: 2,
     maxTeamMembers: 3,
@@ -57,7 +58,7 @@ const eventData: EventData[] = [
   {
     name: "Super Coders",
     soloPrice: 60,
-    teamPrice: 100,
+    teamPrice: `${100}`,
     hasSolo: true,
     hasTeam: true,
     minTeamMembers: 2,
@@ -66,7 +67,7 @@ const eventData: EventData[] = [
   {
     name: "Lord of The Webs (Web Dev)",
     soloPrice: 60,
-    teamPrice: 100,
+    teamPrice: `${100}`,
     hasSolo: true,
     hasTeam: true,
     maxTeamMembers: 2,
@@ -74,16 +75,16 @@ const eventData: EventData[] = [
   },
   {
     name: "Vision Hack (Mini Hackathon)",
-    teamPrice: 300,
+    teamPrice: `${200} for upto 3 members  & For 4+ members - ₹${300}`,
     hasSolo: false,
     hasTeam: true,
-    minTeamMembers: 2,
-    maxTeamMembers: 5,
+    minTeamMembers: 3,
+    maxTeamMembers: 6,
   },
   {
     name: "Quiz of Thrones (Tech Quiz)",
-    soloPrice: 50,
-    teamPrice: 150,
+    soloPrice: 70,
+    teamPrice: `${100}`,
     hasSolo: true,
     hasTeam: true,
     minTeamMembers: 2,
@@ -91,7 +92,8 @@ const eventData: EventData[] = [
   },
   {
     name: "Speed Drift",
-    teamPrice: 300,
+    teamPrice: `${100}`,
+    soloPrice:100,
     hasSolo: true,
     hasTeam: true,
     minTeamMembers: 2,
@@ -99,7 +101,7 @@ const eventData: EventData[] = [
   },
   {
     name: "Ground Zero (BGMI)",
-    teamPrice: 300,
+    teamPrice: `${250}`,
     hasSolo: false,
     hasTeam: true,
     minTeamMembers: 4,
@@ -107,7 +109,7 @@ const eventData: EventData[] = [
   },
   {
     name: "Digital Kickoff (E Football)",
-    teamPrice: 200,
+    teamPrice: `${200}`,
     hasSolo: false,
     hasTeam: true,
     minTeamMembers: 3,
@@ -189,7 +191,7 @@ const RegisterPage: React.FC = () => {
             teamMembers,
             screenShot: imageUrl,
           });
-          setSuccessMessage("Form submitted successfully!");
+          setSuccessMessage("Form submitted successfully!, Please Go to the Registration desk or Contact us for any Queries");
           reset(); // Clear the form fields
           setTeamMembers([""]); // Reset team members
            // Reset selected event
