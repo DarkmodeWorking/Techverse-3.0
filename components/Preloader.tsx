@@ -11,14 +11,10 @@ const languages: string[] = [
   'تكنولوجيا 3.0',         // Arabic (alternative for tech)
   'טֶכנווֶרס 3.0',        // Hebrew
   'टेकवर्स 3.0',           // Marathi
-  'Tecnoverso 3.0',        // Spanish
-  'Technoversum 3.0',      // German
-  'Technovers 3.0',        // French
   'Τεχνοβέρσο 3.0',        // Greek
   'Tecnoverso 3.0',        // Italian
   'टेकवर्स 3.0',           // Nepali
   'เทคเวิร์ส 3.0',         // Thai
-  'Текворс 3.0',           // Bulgarian
   'Техноверсум 3.0',       // Serbian
   'ტექვერს 3.0',           // Georgian
 ];
