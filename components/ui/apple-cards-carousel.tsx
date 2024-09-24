@@ -238,7 +238,7 @@ export const Card = ({
               <div className="py-0">{card.rules}</div>
               <div className="py-10">{card.heads}</div>
               <div className="text-center">
-                <a href='/register' style={{ fontFamily: 'CustomFont' }} className="py-3 px-5 rounded-full font-mono text-2xl text-white bg-gradient-to-r from-violet-800 to-indigo-700"> Register </a>
+                <a href='/register' style={{ fontFamily: 'CustomFont' }} className="py-3 px-5 rounded-full font-mono text-2xl text-white bg-gradient-to-r from-violet-800 to-indigo-700 hover:from-violet-900 hover:to-indigo-800"> Register </a>
               </div>
             </motion.div>
           </div>
