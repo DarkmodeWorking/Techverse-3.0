@@ -6,7 +6,7 @@ const words = `Guru Nanak Institute of Technology is a top engineering college i
 export function TextGenerateEffectDemo() {
   return (
     <>
-        <p style={{ fontFamily: 'CustomFont' }} className="text-3xl sm:text-5xl font-mono text-center"> Our Institute: Guru Nanak Institute of Technology </p>
+        <p style={{ fontFamily: 'CustomFont' }} className=" text-white text-3xl sm:text-5xl font-mono text-center"> Our Institute: Guru Nanak Institute of Technology </p>
         <div className="flex flex-col sm:flex-row m-10 sm:m-20 sm:gap-20 items-center">
             <img className="h-[16rem] w-[16rem] sm:h-[35rem] sm:w-[35rem] rounded-3xl transition-transform duration-300 ease-in-out transform hover:scale-105 mb-10 sm:mb-0" src="/gallery/NIGHT-VIEW-COLLEG.jpg" alt="" />
             <TextGenerateEffect words={words} />

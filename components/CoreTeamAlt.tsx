@@ -191,10 +191,24 @@ const content = [
     description: "Sayan Acharya",
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/coreTeam/sayan.jpg"
+          fill
+          className="rounded-full object-cover"
+          alt="Smarta Das - SPOC"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Rick Roll",
+    description: "Rick Astley",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
         <img
           src="/coreTeam/rickroll-roll.gif"
           className="rounded-full object-cover"
-          alt="Sayan Acharya - SPOC"
+          alt="Rick Astley - Rick Roll"
           style={{ width: "100%", height: "100%" }} // Ensure the image fills the container
         />
       </div>

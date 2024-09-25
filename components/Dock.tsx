@@ -16,7 +16,7 @@ export function Dock() {
     {
       title: "Home",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconHome className="h-full w-full text-neutral-300" />
       ),
       href: "/",
     },
@@ -24,14 +24,14 @@ export function Dock() {
     {
       title: "About",
       icon: (
-        <Icon3dCubeSphere className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <Icon3dCubeSphere className="h-full w-full text-neutral-300" />
       ),
       href: "/about",
     },
     {
       title: "Contact",
       icon: (
-        <IconPhone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconPhone className="h-full w-full text-neutral-300" />
       ),
       href: "/contact",
     },
@@ -50,14 +50,14 @@ export function Dock() {
     {
       title: "Facebook",
       icon: (
-        <IconBrandFacebook className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandFacebook className="h-full w-full text-neutral-300" />
       ),
       href: "https://www.facebook.com/profile.php?id=61566360148718&mibextid=qi2Omg&rdid=IAtofTfWoxDjX9a5&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FqmmZ1edNbKHLpHn6%2F%3Fmibextid%3Dqi2Omg",
     },
     {
       title: "Instagram",
       icon: (
-        <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandInstagram className="h-full w-full text-neutral-300" />
       ),
       href: "https://www.instagram.com/__techverse__/",
     }
