@@ -29,7 +29,7 @@ function Navbar({ className }: { className?: string }) {
     <div className={cn("relative max-w-lg mx-auto z-50", className)}>
       {/* Mobile Menu Toggle Button */}
       <button 
-        className="fixed top-4 left-4 lg:hidden text-2xl z-50"
+        className="text-white fixed top-4 left-4 lg:hidden text-2xl z-50"
         onClick={() => setIsOpen(!isOpen)}
         aria-label={isOpen ? "Close menu" : "Open menu"}
       >
