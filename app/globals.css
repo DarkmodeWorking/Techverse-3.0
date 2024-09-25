@@ -15,20 +15,15 @@
   scrollbar-width: none;      /* Firefox */
 }
 
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+/* Force dark mode across the website */
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
 }
+
 @font-face {
   font-family: 'CustomFont';
   src: url('/Fonts/Fino.ttf') format('truetype');
@@ -44,13 +39,6 @@
 
 body {
   font-family: 'CustomFont', sans-serif; /* Apply the font to the body */
-}
-body {
-  font-family: 'AnotherFont', sans-serif; /* Apply the font to the body */
-}
-
-
-body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -65,6 +53,7 @@ body {
     text-wrap: balance;
   }
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

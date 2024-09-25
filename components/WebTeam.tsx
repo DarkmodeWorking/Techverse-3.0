@@ -6,7 +6,7 @@ const people = [
   {
     id: 1,
     name: "Anurag Bhattacharjee",
-    designation: "Darkmode Addict",
+    designation: "Darkmode Astaroth",
     image: "/coreTeam/github.png",
     href:"https://www.linkedin.com/in/anurag-bhattacharjee-65a487275/"
   },

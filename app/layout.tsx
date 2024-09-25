@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html className="bg-black" lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         {/* Include Botpress Web Chat Scripts */}
         <Script

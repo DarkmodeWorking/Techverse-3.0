@@ -10,13 +10,13 @@ const Footer = () => {
         <div className='basis-[60%] flex mb-10'>
           <Logo />
           <div> 
-            <b>Venue:</b> <br /> 
+            <b className='text-white'>Venue:</b> <br /> 
             <p className='text-neutral-500'>
             Guru Nanak Institute of Technology <br />
             157/F, Nilgunj Road, Sahid Colony, <br />
             Panihati, Kolkata, West Bengal - 700114, <br /><br />
             </p>
-            <b>Timeline:</b> <br />
+            <b className='text-white'>Timeline:</b> <br />
             <p className='text-neutral-500'>
             November 5 - 6
             </p>
