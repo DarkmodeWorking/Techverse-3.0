@@ -220,7 +220,7 @@ const content = [
 export function CoreTeamAlt() {
   return (
     <div>
-        <p style={{ fontFamily: 'CustomFont' }} className="text-3xl sm:text-6xl font-mono text-center mt-10"> Meet the Core Team </p>
+        <p style={{ fontFamily: 'CustomFont' }} className="text-3xl sm:text-6xl font-mono text-center mt-10 text-white"> Meet the Core Team </p>
         <br /><br />
         <div className="p-10">
             <StickyScroll  content={content} contentClassName="custom-class" />
