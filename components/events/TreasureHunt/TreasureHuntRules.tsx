@@ -2,12 +2,12 @@ export function TreasureHuntRules() {
   return (
     <div
       key={"dummy-content"}
-      className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+      className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
     >
-      <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+      <p className=" pb-10 text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
         <b>Rules & Regulations:</b>
       </p>
-      <ol className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+      <ol className=" text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
         <li>
           <b>Crew Formation:</b><br />
           Each pirate crew must consist of 1 to 4 members, with a recommended crew size of 3 Straw Hats to
@@ -51,12 +51,12 @@ export function TreasureHuntRules() {
         </li>
       </ol>
 
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto mt-4">
+      <p className=" text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto mt-4">
         As Gol D. Roger once declared, <i>&ldquo;Inherited will, the swelling of the changing times, 
         and the dreams of people&mdash;these are things that cannot be stopped.&rdquo;</i>
       </p>
 
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto mt-2">
+      <p className=" text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto mt-2">
         Now, the treasure awaits its rightful heir. Let&apos;s see &ndash; Who&apos;s gonna be King of the Pirates!
       </p>
     </div>

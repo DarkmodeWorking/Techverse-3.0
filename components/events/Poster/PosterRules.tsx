@@ -2,9 +2,9 @@ export function PosterRules() {
     return (
       <div
         key={"dummy-content"}
-        className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+        className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
       >
-        <p className="text-neutral-600 pb-10 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+        <p className=" pb-10 text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
         <h2><b>Rules and Regulations:</b></h2><br />
           <ol>
             <li>1. Each team is allotted a presentation time of 3-5 minutes.</li>
