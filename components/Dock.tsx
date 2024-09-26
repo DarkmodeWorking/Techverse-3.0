@@ -21,13 +21,13 @@ export function Dock() {
       href: "/",
     },
 
-    {
-      title: "About",
-      icon: (
-        <Icon3dCubeSphere className="h-full w-full text-neutral-300" />
-      ),
-      href: "/about",
-    },
+    // {
+    //   title: "About",
+    //   icon: (
+    //     <Icon3dCubeSphere className="h-full w-full text-neutral-300" />
+    //   ),
+    //   href: "/about",
+    // },
     {
       title: "Contact",
       icon: (
