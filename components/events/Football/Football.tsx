@@ -9,11 +9,18 @@ export function Football() {
         Where every pass, tackle, and goal defines champions. Today, players from all corners of the world unite 
           in pursuit of victory, pushing the limits of skill and strategy in the beautiful virtual game. 
           Let the competition ignite, and may the best team rise to glory! <br /> <br />
+          <b> MATCH TIME: </b>
           <ul>
-          <li>GROUP STAGE - 6 MINS</li>
-          <li>KNOCKOUT STAGE - 8 MINS (ET + PK ON)</li>
-          <li>FINAL - 10 MINS (ET + PK ON)</li>
-        </ul>
+            <li>KNOCKOUT STAGE - 7 MINS (ET + PK ON)</li>
+            <li>SEMI-FINAL - 8 MINS (ET + PK ON) </li>
+            <li>FINAL - 10 MINS (ET + PK ON)</li>
+          </ul>
+          <br />
+          <b>TOURNAMENT FORMAT: </b>
+          <ul>
+            <li>SLOTS LIMIT: 32 TEAMS</li>
+            <li>KNOCKOUT STAGE: TEAMS WILL BE DRAWN UP RANDOMLY</li>
+          </ul>
         </p>
 
       </div>
