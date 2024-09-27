@@ -24,12 +24,12 @@ export function FootballRules() {
               8. IF A MATCH IS TIED, THEN BEST VS BEST WILL BE PLAYED.
             </li> <br />
             <li>9. IPADS OR ANY SORT OF TABLETS ARE NOT ALLOWED.</li><br />
-            <li>10. SLOTS ARE LIMITED. LATE ENTRIES WILL NOT BE ENTERTAINED.</li><br />
+
             <li>
-              11. ALL TEAMS AND PARTICIPANTS MUST ARRIVE ON TIME. IF ANY TEAM DOES NOT REPORT AT THE 
+              10. ALL TEAMS AND PARTICIPANTS MUST ARRIVE ON TIME. IF ANY TEAM DOES NOT REPORT AT THE 
               REPORTING TIME / MATCH TIME, THEN THE OPPONENT TEAM WILL GET A WALKOVER.
             </li> <br />
-            <li>12. THE DECISION OF EVENT HEADS WILL BE FINAL.</li><br />
+            <li>11. THE DECISION OF EVENT HEADS WILL BE FINAL.</li><br />
           </ol>
         </p>
           
