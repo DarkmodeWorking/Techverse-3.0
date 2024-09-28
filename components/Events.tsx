@@ -42,7 +42,7 @@ import { TreasureHuntHeads } from "./events/TreasureHunt/TreasureHuntHeads";
 
 export function Events() {
   const cards = data.map((card, index) => (
-    <Card key={card.src} card={card} index={index} />
+    <Card key={card.src} card={card} index={index} layout={true} />
   ));
 
   return (
