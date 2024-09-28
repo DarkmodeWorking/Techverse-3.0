@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+// import { Carousel, Card } from "@/components/ui/apel-cord-carusu";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
 import { SuperCoder } from '@/components/events/Supercoder/SuperCoders'
@@ -42,7 +43,7 @@ import { TreasureHuntHeads } from "./events/TreasureHunt/TreasureHuntHeads";
 
 export function Events() {
   const cards = data.map((card, index) => (
-    <Card key={card.src} card={card} index={index} layout={true} />
+    <Card key={card.src} card={card} index={index} />
   ));
 
   return (
