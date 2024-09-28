@@ -6,6 +6,13 @@ export function WebDevRules() {
     >
      <p className=" pb-10 text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
         <strong>Rules and Regulations:</strong>
+        <b>Event Highlights:</b>
+          <br /><br />Two Rounds of Competition:
+          
+            The event kicks off with an MCQ round covering the fundamentals of web development. Participants will answer 
+            30 questions, testing their knowledge and preparation. The top performers will then advance to the second 
+            round, where they will build a website based on provided requirements, allowing them to demonstrate their 
+            practical skills.
         <br /><br />
 
         1. Participants can compete solo or in teams of a maximum of two members.
