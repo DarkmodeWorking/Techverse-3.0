@@ -109,7 +109,7 @@ const content = [
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
         <Image
-          src="/coreTeam/Arghyadip.png"
+          src="/coreTeam/Arghyadip2.jpeg"
           fill
           className="rounded-full object-cover"
           alt="Arghyadip Roy - Co-Ordinator"
@@ -126,7 +126,7 @@ const content = [
           src="/coreTeam/Ankita.png"
           fill
           className="rounded-full object-cover"
-          alt="Arghyadip Roy - Co-Ordinator"
+          alt="Ankita Ghosh - Co-Ordinator"
         />
       </div>
     ),
