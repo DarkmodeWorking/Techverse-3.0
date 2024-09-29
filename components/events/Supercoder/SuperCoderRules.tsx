@@ -4,7 +4,7 @@ export function SuperCoderRules() {
       key={"dummy-content"}
       className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
     >
-      <p className=" pb-10 text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+      <p className=" pb-10 text-neutral-400 text-xs md:text-xl font-sans max-w-3xl mx-auto">
         <b>Event Description: </b><br />
         <br />Three problem statements will be given to you. Solve the problem using any language in the shortest time possible.
         <br /><br />Prelims: Time limit - 60 mins
@@ -16,6 +16,7 @@ export function SuperCoderRules() {
         <br /><br />Finals: Time limit - 60 mins
         <br />1. There will be 3 questions.
         <br />2. Winner and Runners Up to be selected from this round.
+        <br /><br />
         <b>Rules and Regulations: </b><br />
         <br />1. A team can consist of at most 2 members.
         <br /><br />2. All coding languages are accepted.

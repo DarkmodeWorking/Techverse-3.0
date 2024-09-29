@@ -56,7 +56,7 @@ const eventData: EventData[] = [
     maxTeamMembers: 3,
   },
   {
-    name: "Super Coders",
+    name: "Super Coders (Coding Competition)",
     soloPrice: 60,
     teamPrice: `${100}`,
     hasSolo: true,
@@ -91,7 +91,7 @@ const eventData: EventData[] = [
     maxTeamMembers: 3,
   },
   {
-    name: "Speed Drift",
+    name: "Speed Drift (Robo Race)",
     teamPrice: `${100}`,
     soloPrice:100,
     hasSolo: true,
@@ -100,7 +100,7 @@ const eventData: EventData[] = [
     maxTeamMembers: 4,
   },
   {
-    name: "Ground Zero (BGMI)",
+    name: "BGMI (Battle Royale)",
     teamPrice: `${250}`,
     hasSolo: false,
     hasTeam: true,
@@ -124,7 +124,7 @@ const eventData: EventData[] = [
     // maxTeamMembers: 6,
   },
   {
-    name: "Shutter Showcase",
+    name: "Shutter Showcase (Photography)",
     soloPrice: 50,
     hasSolo: true,
     hasTeam: false,

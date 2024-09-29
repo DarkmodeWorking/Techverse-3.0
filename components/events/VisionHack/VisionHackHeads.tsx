@@ -14,16 +14,16 @@ export function VisionHackHeads() {
           height={500}
           className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
         /> */}
-        <p className=" pb-10 text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+        <p className=" pb-10 text-neutral-400 text-xs md:text-xl font-sans max-w-3xl mx-auto">
         For any furthur queries please contact:
         </p>
         <div className="sm:flex justify-between">
-          <p className=" pb-10 text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+          <p className=" pb-10 text-neutral-400 text-xs md:text-xl font-sans max-w-3xl mx-auto">
             Event Head: Aiswariya Das <br />
             Phone: +91 81004 83934 <br />
             Email: aiswariya1373@gmail.com
           </p>
-          <p className=" pb-10 text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+          <p className=" pb-10 text-neutral-400 text-xs md:text-xl font-sans max-w-3xl mx-auto">
             Co-Event Head: Sandip Dey <br />
             Phone: +91 99070 61973 <br />
             Email: sandip.dey1307@gmail.com
