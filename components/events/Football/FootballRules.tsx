@@ -4,9 +4,22 @@ export function FootballRules() {
         key={"dummy-content"}
         className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
       >
-        <p className=" pb-10 text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
-          <b>Tournament Rules and Regulations:</b> <br /><br />
-        <ol>
+        <p className=" pb-10 text-neutral-400 text-xs md:text-xl font-sans max-w-3xl mx-auto">
+          <b> MATCH TIME: </b> <br /><br />
+          <ul>
+            <li>KNOCKOUT STAGE - 7 MINS (ET + PK ON)</li>
+            <li>SEMI-FINAL - 8 MINS (ET + PK ON) </li>
+            <li>FINAL - 10 MINS (ET + PK ON)</li>
+          </ul>
+          <br />
+          <b>TOURNAMENT FORMAT: </b><br /><br />
+          <ul>
+            <li>SLOTS LIMIT: 32 TEAMS</li>
+            <li>KNOCKOUT STAGE: TEAMS WILL BE DRAWN UP RANDOMLY</li>
+          </ul>
+          <br />
+          <b>TOURNAMENT RULES AND REGULATIONS: </b> <br /><br />
+          <ol>
             <li>1. TOURNAMENT TYPE: 3 V 3 (+1 SUB).</li><br />
             <li>2. ALL CARDS ARE ALLOWED.</li><br />
             <li>

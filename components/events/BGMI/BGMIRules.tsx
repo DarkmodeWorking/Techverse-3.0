@@ -5,7 +5,7 @@ export function BGMIRules() {
         className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
       >
         
-        <p className=" pb-10 text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+        <p className=" pb-10 text-neutral-400 text-xs md:text-xl font-sans max-w-3xl mx-auto">
         <b>Rules and Regulations:</b>
         <br /><br />
     

@@ -53,7 +53,7 @@ const content = [
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
         <Image
-          src="/coreTeam/Champak1.png"
+          src="/coreTeam/Champak.jpg"
           fill
           className="rounded-full object-cover"
           alt="Champak Kundu - Finance"

@@ -7,16 +7,16 @@ export function LapRaceHeads() {
         <p className="text-center mb-10 text-white font-bold text-base md:text-xl"> 
           SOLO / TEAM - &#8377; 100
         </p>
-        <p className=" pb-10 text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+        <p className=" pb-10 text-neutral-400 text-xs md:text-xl font-sans max-w-3xl mx-auto">
         For any furthur queries please contact:
         </p>
         <div className="sm:flex justify-between">
-          <p className=" pb-10 text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+          <p className=" pb-10 text-neutral-400 text-xs md:text-xl font-sans max-w-3xl mx-auto">
             Event Head: Alyvia Biswas <br />
             Phone: +91 96933 89037 <br />
             Email: alyvia02510@gmail.com
           </p>
-          <p className=" pb-10 text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
+          <p className=" pb-10 text-neutral-400 text-xs md:text-xl font-sans max-w-3xl mx-auto">
             Co-Event Head: Surajit Paul <br />
             Phone: +91 90648 38737 <br />
             Email: surajitpaul1304@gmail.com

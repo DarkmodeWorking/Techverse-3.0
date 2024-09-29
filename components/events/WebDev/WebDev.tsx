@@ -1,23 +1,19 @@
-export function WebDev() {
-    return (
-      <div
-        key={"dummy-content"}
-        className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
-      >
-        <p className=" pb-10 text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto">
-        Join us for the Web Dev Competition, an exciting opportunity to showcase your web development skills! This event challenges participants to test their knowledge and creativity through two engaging rounds. Whether you&apos;re a solo developer or part of a dynamic duo, this competition is designed to push your limits and enhance your coding abilities.
-        
-        
-        
-        <br /><br /><b>Event Highlights:</b>
-          <br /><br />Two Rounds of Competition:
-          
-            The event kicks off with an MCQ round covering the fundamentals of web development. Participants will answer 
-            30 questions, testing their knowledge and preparation. The top performers will then advance to the second 
-            round, where they will build a website based on provided requirements, allowing them to demonstrate their 
-            practical skills.
-        </p>
+'use client'
+import { TextGenerateEffect } from '../../ui/text-generate-event'
 
-      </div>
-    );
-  };
+const words = `Join us for the Web Dev Competition, an exciting opportunity to showcase your web development skills and take your abilities to the next level! This thrilling event challenges participants to test their knowledge and creativity through two engaging rounds, designed to push the boundaries of your coding prowess. Whether you're a solo developer or part of a dynamic duo, this competition offers a platform to demonstrate your talent and innovation.
+
+In the first round, you'll tackle real-world scenarios, developing practical solutions that highlight your technical skills and problem-solving abilities. The second round will challenge you to think outside the box as you create an original project that showcases your unique style and creativity.
+
+Participants will also benefit from networking opportunities with fellow developers and industry professionals, making it a fantastic chance to learn, grow, and collaborate. So, gear up for an unforgettable experience that combines competition, learning, and creativity. Don't miss out—register now and prepare to make your mark in the world of web development!`
+
+export function WebDev() {
+  return (
+    <div
+      key={"dummy-content"}
+      className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+    >
+      <TextGenerateEffect words={words} />
+    </div>
+  );
+};

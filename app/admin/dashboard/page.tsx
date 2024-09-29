@@ -93,7 +93,7 @@ export default function AdminDashboard() {
           <img
             src={selectedImage}
             alt="Zoomed Screenshot"
-            className={`max-w-4xl max-h-4xl rounded-3xl transition-transform duration-300 ${
+            className={`max-w-4xl max-h-screen rounded-3xl transition-transform duration-300 ${
               isZooming ? 'scale-100' : 'scale-75'
             }`}
             onClick={(e) => e.stopPropagation()} // Prevent closing modal when clicking the image
