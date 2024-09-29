@@ -28,13 +28,13 @@ const Preloader: React.FC = () => {
 
   return (
     <div className="flex items-center justify-center h-screen bg-black text-white">
-      <h1 style={{ 
+      <h4 style={{ 
             fontFamily: 'AnotherFont',
             textShadow: '0 0 15px rgba(128, 0, 128, 1), 0 0 30px rgba(128, 0, 128, 0.9), 0 0 45px rgba(128, 0, 128, 0.7)', // Enhanced purple glow
             color: 'white' // Keeping the text itself white
           }} className="-mt-64 sm:-mt-40 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold tracking-widest text-gray-200 animate-none transition-transform transform hover:scale-105">
         {languages[currentLang]}
-      </h1>
+      </h4>
     </div>
   );
 };
