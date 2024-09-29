@@ -4,7 +4,7 @@ export function VisionHackHeads() {
         key={"dummy-content"}
         className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
       >
-        <p className="text-center mb-10 text-white font-bold text-base md:text-xl"> 
+        <p className="text-center mb-10 text-white font-bold text-sm md:text-xl"> 
           TEAM OF 3 - &#8377; 200 &#124; TEAM OF 4-6 - &#8377; 300
         </p>
         {/* <Image
