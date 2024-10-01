@@ -56,6 +56,7 @@ export default function AdminDashboard() {
       <table className="min-w-full bg-zinc-800 text-white rounded-2xl">
         <thead>
           <tr>
+            <th className="py-2">Sl. No</th> {/* Added column for Serial Number */}
             <th className="py-2">Full Name</th>
             <th className="py-2">Email</th>
             <th className="py-2">Phone</th>
@@ -65,8 +66,9 @@ export default function AdminDashboard() {
           </tr>
         </thead>
         <tbody className="text-center">
-          {filteredParticipants.map((participant) => (
+          {filteredParticipants.map((participant, index) => (
             <tr key={participant._id}>
+              <td className="py-2">{index + 1}</td> {/* Display serial number */}
               <td className="py-2">{participant.fullName}</td>
               <td className="py-2">{participant.email}</td>
               <td className="py-2">{participant.phone}</td>
