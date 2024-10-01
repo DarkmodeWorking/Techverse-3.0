@@ -146,6 +146,20 @@ const content = [
     ),
   },
   {
+    title: "Media",
+    description: "Debargha Panda",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/coreTeam/Debargha.jpeg"
+          fill
+          className="rounded-full object-cover"
+          alt="Debargha Panda - Media"
+        />
+      </div>
+    ),
+  },
+  {
     title: "Decorations",
     description: "Riya Banerjee",
     content: (
