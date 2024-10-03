@@ -109,7 +109,7 @@ const eventData: EventData[] = [
   },
   {
     name: "Digital Kickoff (E Football)",
-    teamPrice: `${200}`,
+    teamPrice: `${301}`,
     hasSolo: false,
     hasTeam: true,
     minTeamMembers: 3,
@@ -410,7 +410,7 @@ const RegisterPage: React.FC = () => {
                 {/* UPI Screenshot Upload */}
                 <div className="bg-zinc-700 p-4 rounded-md shadow-sm">
                   <img
-                    src="/UPI.png"
+                    src="/QR.jpeg"
                     alt="UPI QR Code"
                     className="w-25 h-25 mx-auto mb-4"
                   />

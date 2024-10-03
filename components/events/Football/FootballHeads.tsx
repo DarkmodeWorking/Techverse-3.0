@@ -5,7 +5,7 @@ export function FootballHeads() {
         className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
       >
         <p className="text-center mb-10 text-white font-bold text-base md:text-xl"> 
-          TEAM - &#8377; 200 
+          TEAM - &#8377; 301 
         </p>
  
         <p className=" pb-10 text-neutral-400 text-xs md:text-xl font-sans max-w-3xl mx-auto">
@@ -28,6 +28,17 @@ export function FootballHeads() {
             Co-Event Head: Debjit Saha <br />
             Phone: +91 99034 69038 <br />
             Email: debjitsaha606@gmail.com
+          </p>
+        </div>
+        <div className="sm:flex justify-between">
+        <p className=" pb-10 text-neutral-400 text-xs md:text-xl font-sans max-w-3xl mx-auto ">
+            BFF Admin: Sinchan <br />
+            Phone: +91 85849 97031 <br />
+          </p>
+          <p className=" pb-10 text-neutral-400 text-xs md:text-xl font-sans max-w-3xl mx-auto">
+            BFF Admin: Batman <br />
+            Phone: +91 62917 33908 <br />
+            Email: bengalpesfederation@gmail.com
           </p>
         </div>
       </div>
