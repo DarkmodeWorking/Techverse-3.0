@@ -5,7 +5,7 @@ export function TreasureHuntHeads() {
         className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
       >
         <p className="text-center mb-10 text-white font-bold text-sm md:text-xl"> 
-          TEAM OF 3 - &#8377; 170 &#124; TEAM OF 4 - &#8377; 200
+          TEAM OF 2 to 3 - &#8377; 170 &#124; TEAM OF 4 - &#8377; 200
         </p>
         {/* <Image
           src="/images/supercoders.jpeg"

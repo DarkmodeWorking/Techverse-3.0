@@ -31,10 +31,10 @@ interface FormValues {
 const eventData: EventData[] = [
   {
     name: "Run for The One Piece (Treasure Hunt)",
-    teamPrice: `${170} for 3 members & ₹${200} for 4 members`,
+    teamPrice: `${170} for 2-3 members & ₹${200} for 4 members`,
     hasSolo: false,
     hasTeam: true,
-    minTeamMembers: 3,
+    minTeamMembers: 2,
     maxTeamMembers: 4,
   },
   {
