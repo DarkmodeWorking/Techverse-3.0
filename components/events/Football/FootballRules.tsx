@@ -39,7 +39,11 @@ export function FootballRules() {
           <li>Matches will take place in the college lab and will start on time.</li><br />
           <li>Any form of misconduct or violation of the game rules will result in disqualification.</li>
         </ol>
-
+          <br />
+          <ol>
+            <li>All the players are requested to speak with due respect and dignity both with admins/organizers and fellow captains; and also with the opponents. If any team complaints about the disrespectful chats, there will be strict actions against that player. A person must understand where to 5/15 draw the line for jokes and lewd comments and he must stop immediately if the opposite person feels it offensive or derogatory.</li><br />
+            <li>PLAYERS ARE REQUESTED TO OBEY AND FOLLOW THE RULES AND GUIDELINES OF THE FEST AND THE COLLEGE. IF ANY ORGANISER OR OTHER MEMBER OF THE COLLEGE REPORTS AGAINST ANY PLAYER FOR MISCONDUCT THEN HE SHALL BE WARNED AND MAY BE DE-BARRED FROM PARTICIPATING IN THE FEST AS PER THE GRAVITY OF THE SITUATION.</li>
+          </ol>
         <br /><br />
         <b>For any further details, check out the Brochure</b>
       </div>
