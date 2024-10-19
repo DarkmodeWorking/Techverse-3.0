@@ -20,7 +20,6 @@ export function VisionHackRules() {
           <ul>
             <li>Participants are free to use any programming languages or frameworks that support the development of their solution.</li>
             <li>Tools, libraries, and frameworks that assist in the development process are encouraged.</li>
-            <li>However, the use of AI-powered tools (such as GPT, ChatGPT, Copilot, etc.) is strictly prohibited. The goal is to foster creativity and originality, encouraging participants to build from scratch.</li>
           </ul>
         </li>
         <li>
