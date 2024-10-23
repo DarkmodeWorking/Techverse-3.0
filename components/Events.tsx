@@ -41,6 +41,20 @@ import { TreasureHunt } from "./events/TreasureHunt/TreasureHunt";
 import { TreasureHuntRules } from "./events/TreasureHunt/TreasureHuntRules";
 import { TreasureHuntHeads } from "./events/TreasureHunt/TreasureHuntHeads";
 
+import { BallButton } from "./events/Ball8/BallButton";
+import { ModelDisplayButtonButton } from "./events/ModelDisplay/ModelDisplayButton";
+import { VisionHackButton } from "./events/VisionHack/VisionHackButton";
+import { PosterButton } from "./events/Poster/PosterButton";
+import { button } from "framer-motion/client";
+import { TechQuizButton } from "./events/TechQuiz/TechQuizButton";
+import { WebDevButton } from "./events/WebDev/WebDevButton";
+import { SuperCoderButton } from "./events/Supercoder/SuperCoderButton";
+import { LapRaceButtonButton } from "./events/LapRace/LapRaceButton";
+import { BGMIButton } from "./events/BGMI/BGMIButton";
+import { FootballButton } from "./events/Football/FootballButton";
+import { PhotoButton } from "./events/Photography/PhotoButton";
+import { TreasureHuntButton } from "./events/TreasureHunt/TreasureHuntButton";
+
 export function Events() {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
@@ -63,7 +77,8 @@ const data = [
     src: "/images/modeldisplay.jpg",
     content: <ModelDisplay />,
     rules: <ModelDisplayRules />,
-    heads: <ModelDisplayHeads />
+    heads: <ModelDisplayHeads />,
+    button: <ModelDisplayButtonButton />
   },
   {
     category: "Mini Hackathon",
@@ -71,7 +86,8 @@ const data = [
     src: "/images/idea2.jpg",
     content: <VisionHack />,
     rules: <VisionHackRules />,
-    heads: <VisionHackHeads />
+    heads: <VisionHackHeads />,
+    button: <VisionHackButton />
   },
   {
     category: "Poster Presentation", // artisans
@@ -79,7 +95,8 @@ const data = [
     src: "/images/poster.jpg",
     content: <Poster />,
     rules: <PosterRules />,
-    heads: <PosterHeads />
+    heads: <PosterHeads />,
+    button: <PosterButton />
   },
   {
     category: "Tech Quiz",
@@ -87,7 +104,8 @@ const data = [
     src: "/images/techquiz.jpg",
     content: <TechQuiz />,
     rules: <TechQuizRules />,
-    heads: <TechQuizHeads />
+    heads: <TechQuizHeads />,
+    button: <TechQuizButton />
   },
   {
     category: "Website Development",
@@ -95,7 +113,8 @@ const data = [
     src: "/images/website.webp",
     content: <WebDev />,
     rules: <WebDevRules />,
-    heads: <WebDevHeads />
+    heads: <WebDevHeads />,
+    button: <WebDevButton />
   },
   {
     category: "Problem Solving Coding",
@@ -103,7 +122,8 @@ const data = [
     src: "/images/supercoders.jpeg",
     content: <SuperCoder />,
     rules: <SuperCoderRules />,
-    heads: <SuperCoderHeads />
+    heads: <SuperCoderHeads />,
+    button: <SuperCoderButton />
   },
   {
     category: "Lap Race",
@@ -111,7 +131,8 @@ const data = [
     src: "/images/laprace.jpg",
     content: <LapRace />,
     rules: <LapRaceRules />,
-    heads: <LapRaceHeads />
+    heads: <LapRaceHeads />,
+    button: <LapRaceButtonButton />
   },
   {
     category: "Battle Royale",
@@ -119,7 +140,8 @@ const data = [
     src: "/images/pubg.webp",
     content: <BGMI />,
     rules: <BGMIRules />,
-    heads: <BGMIHeads />
+    heads: <BGMIHeads />,
+    button: <BGMIButton />
   },
   {
     category: "E Football",
@@ -127,7 +149,8 @@ const data = [
     src: "/images/football.jpg",
     content: <Football />,
     rules: <FootballRules />,
-    heads: <FootballHeads />
+    heads: <FootballHeads />,
+    button: <FootballButton />
   },
   {
     category: "8 Ball Pool",
@@ -135,7 +158,8 @@ const data = [
     src: "/images/8ball.jpg",
     content: <Ball />,
     rules: <BallRules />,
-    heads: <BallHeads />
+    heads: <BallHeads />,
+    button: <BallButton />
   },
   // {
   //   category: "Indoor Chess",
@@ -160,7 +184,8 @@ const data = [
     src: "/images/photo2.webp",
     content: <Photo />,
     rules: <PhotoRules />,
-    heads: <PhotoHeads />
+    heads: <PhotoHeads />,
+    button: <PhotoButton />
   },
   {
     category: "Treasure Hunt",
@@ -168,6 +193,7 @@ const data = [
     src: "/images/treasure2.jpg",
     content: <TreasureHunt />,
     rules: <TreasureHuntRules />,
-    heads: <TreasureHuntHeads />
+    heads: <TreasureHuntHeads />,
+    button: <TreasureHuntButton />
   }
 ];
