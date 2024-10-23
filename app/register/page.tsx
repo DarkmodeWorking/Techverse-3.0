@@ -107,14 +107,14 @@ const eventData: EventData[] = [
     minTeamMembers: 4,
     maxTeamMembers: 6,
   },
-  // {
-  //   name: "Digital Kickoff (E Football)",
-  //   teamPrice: `${301}`,
-  //   hasSolo: false,
-  //   hasTeam: true,
-  //   minTeamMembers: 3,
-  //   maxTeamMembers: 4,
-  // },
+  {
+    name: "Digital Kickoff (E Football)",
+    teamPrice: `${301}`,
+    hasSolo: false,
+    hasTeam: true,
+    minTeamMembers: 3,
+    maxTeamMembers: 4,
+  },
   {
     name: "Billiads Blitz (8 Ball Pool)",
     soloPrice: 50,
@@ -130,6 +130,15 @@ const eventData: EventData[] = [
     hasTeam: false,
     // minTeamMembers: 3,
     // maxTeamMembers: 6,
+  },
+  {
+    name: "Combo Event (Lord of the Webs + Super Coder)",
+    soloPrice: 100,
+    teamPrice: `${150}`,
+    hasSolo: true,
+    hasTeam: true,
+    maxTeamMembers: 2,
+    minTeamMembers: 2,
   },
 ];
 
