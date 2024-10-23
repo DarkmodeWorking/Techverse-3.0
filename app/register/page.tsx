@@ -131,6 +131,15 @@ const eventData: EventData[] = [
     // minTeamMembers: 3,
     // maxTeamMembers: 6,
   },
+  {
+    name: "Combo Event (Lord of the Webs + Super Coder)",
+    soloPrice: 100,
+    teamPrice: `${150}`,
+    hasSolo: true,
+    hasTeam: true,
+    maxTeamMembers: 2,
+    minTeamMembers: 2,
+  },
 ];
 
 
