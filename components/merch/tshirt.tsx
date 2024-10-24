@@ -18,16 +18,21 @@ export function Model(props: React.JSX.IntrinsicAttributes & Omit<ExtendedColors
       {/* Iterate through nodes to render them if available */}
       {nodes && Object.keys(nodes).map((key) => {
         const node = nodes[key];
-        return (
-          <mesh
-            key={key}
-            geometry={node.geometry as THREE.BufferGeometry} // Type assertion
-            material={materials[node.material?.name] || materials['default']} // Handle undefined materials
-            position={node.position} // Use node's position
-            rotation={node.rotation} // Use node's rotation
-            scale={node.scale} // Use node's scale
-          />
-        );
+
+        // Check if the node is a Mesh
+        if (node instanceof THREE.Mesh) {
+          return (
+            <mesh
+              key={key}
+              geometry={node.geometry as THREE.BufferGeometry} // Type assertion
+              material={materials[node.material?.name] || materials['default']} // Handle undefined materials
+              position={node.position} // Use node's position
+              rotation={node.rotation} // Use node's rotation
+              scale={node.scale} // Use node's scale
+            />
+          );
+        }
+        return null; // Return null for non-mesh nodes
       })}
     </group>
   );
