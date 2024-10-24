@@ -107,14 +107,14 @@ const eventData: EventData[] = [
     minTeamMembers: 4,
     maxTeamMembers: 6,
   },
-  {
-    name: "Digital Kickoff (E Football)",
-    teamPrice: `${301}`,
-    hasSolo: false,
-    hasTeam: true,
-    minTeamMembers: 3,
-    maxTeamMembers: 4,
-  },
+  // {
+  //   name: "Digital Kickoff (E Football)",
+  //   teamPrice: `${301}`,
+  //   hasSolo: false,
+  //   hasTeam: true,
+  //   minTeamMembers: 3,
+  //   maxTeamMembers: 4,
+  // },
   {
     name: "Billiads Blitz (8 Ball Pool)",
     soloPrice: 50,
