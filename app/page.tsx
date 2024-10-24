@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Gallery } from "@/components/Gallery";
 import { Hero } from "@/components/Hero";
 import Logo from "@/components/LogoAlt";
+import Merchandise from "@/components/merch/Merchandise";
 import { NavbarDemo } from "@/components/NavbarDemo";
 import Image from "next/image"
 
@@ -20,6 +21,7 @@ export default function Home() {
       </div>
       <Earth/>
       <Events/>
+      <Merchandise/>
       <p className="text-white text-center text-2xl md:text-3xl my-16 font-serif mx-16">The Journey So Far: Techverse Through the Lens</p>
       <Gallery/>
     </main>
