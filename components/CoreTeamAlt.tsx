@@ -67,7 +67,7 @@ const content = [
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
         <Image
-          src="/coreTeam/Nanda01.jpeg"
+          src="/coreTeam/Nanda00.jpg"
           fill
           className="rounded-full object-cover"
           alt="Nanda Lal Das - Tech Lead"
