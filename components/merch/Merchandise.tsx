@@ -23,7 +23,7 @@ function Index() {
 				{/* Text Container */}
 				<div className="flex flex-col justify-center text-center md:text-left md:w-[60vw] w-full md:mt-0 mt-5">
 				<br />
-				<p className="md:text-2xl text-xl md:mb-15 mb-7">Stand out in style and show your love for the <strong>Techverse</strong> community—your ultimate tech fest destination—with our exclusive gear! Don&apos;t miss out on the chance to snag an official <strong>Techverse T-shirt</strong> that&apos;s as trendy as it is comfy. It&apos;s the perfect way to vibe with fellow tech enthusiasts who share your passion for all things <strong>Tech</strong>!</p>
+				<p className="md:text-2xl text-xl md:mb-15 mb-7">Stand out in style and show your love for the <strong>Techverse</strong> community, your ultimate tech fest destination with our exclusive gear! Don&apos;t miss out on the chance to snag an official <strong>Techverse T-shirt</strong> that&apos;s as trendy as it is comfy. It&apos;s the perfect way to vibe with fellow tech enthusiasts who share your passion for all things <strong>Tech</strong>!</p>
 				<br />
 				<p className="md:text-2xl text-xl md:mb-15 mb-7">So, level up your wardrobe today and rock that <strong>Techverse</strong> spirit with our awesome merchandise T-shirt!</p>
 
