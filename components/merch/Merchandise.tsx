@@ -50,7 +50,7 @@ function Index() {
 						<directionalLight position={[-5, 0, 0]} intensity={2} />
 						<directionalLight position={[5, 0, 0]} intensity={2} />
 						<ambientLight intensity={5} />
-						<group position={[0, -3.8, 0]} scale={3}>
+						<group position={[0, -3.9, 0]} scale={3}>
 							<Suspense fallback={null}>
 								<Model />
 							</Suspense>
