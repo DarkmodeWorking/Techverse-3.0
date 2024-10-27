@@ -1,4 +1,4 @@
-"use client"; // Ensure this is a client-side component
+"use client";
 
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
@@ -19,13 +19,13 @@ function Merchandise() {
       <div className="main md:p-10 md:ml-10 ml-0 overflow-hidden">
         <div className="textContainer flex flex-col justify-center md:w-[60vw] w-[100vw]">
           <p className="md:text-lg text-sm md:mb-16 mb-6 md:mt-4 mt-3 md:p-0 p-4 text-gray-300">
-            Stand out from the crowd and show your support for the Techverse community with our exclusive merchandise! 
-            Don&apos;t miss the chance to own an official Techverse T-shirt that&apos;s not only stylish but also a great way to connect with others who share your passion. 
+            Stand out from the crowd and show your support for the Techverse community with our exclusive merchandise!
+            Don&apos;t miss the chance to own an official Techverse T-shirt that&apos;s not only stylish but also a great way to connect with others who share your passion.
             <br />
             <br />
             Upgrade your wardrobe today and join the Techverse community with our official merchandise T-shirt!
           </p>
-          <div className="flex justify-center items-center ">
+          <div className="flex justify-center items-center">
             <Link href={buyLink}>
               <div className="buynow text-center py-2 px-4 bg-purple-500 hover:bg-blue-700 text-white font-semibold rounded transition duration-200">
                 Buy Now
@@ -33,24 +33,25 @@ function Merchandise() {
             </Link>
           </div>
         </div>
-        <div className="canvasContainer">
-          <Canvas camera={{ position: [0, 1, 3], fov: 60 }}>
-            <OrbitControls
-              enablePan={false}
-              enableZoom={false}
-              minPolarAngle={Math.PI / 2.2}
-              maxPolarAngle={Math.PI / 2.2}
-            />
-            <directionalLight position={[0, 5, 0]} intensity={5} />
-            <directionalLight position={[-5, 0, 0]} intensity={2} />
-            <directionalLight position={[5, 0, 0]} intensity={2} />
-            <ambientLight intensity={0.5} />
-            <group position={[0, -1.2, 0]}>
-              <Suspense fallback={<span>Loading model...</span>}>
-                <Model scale={[1.3,1.3,1.3]} /> {/* Change scale here */}
-              </Suspense>
-            </group>
-          </Canvas>
+        {/* Card container for T-shirt model */}
+        <div className="flex justify-center items-center">
+          <div className="relative bg-gray-900 rounded-lg shadow-lg w-[300px] h-[400px] flex justify-center items-center">
+            <Canvas camera={{ position: [0, 1, 3], fov: 60 }}>
+              <ambientLight intensity={0.7} />
+              <spotLight position={[5, 5, 5]} angle={0.3} intensity={1.5} penumbra={1} />
+              <OrbitControls
+                enablePan={false}
+                enableZoom={false}
+                minPolarAngle={Math.PI / 2.2}
+                maxPolarAngle={Math.PI / 2.2}
+              />
+              <group position={[0, -1.2, 0]}>
+                <Suspense fallback={<span>Loading model...</span>}>
+                  <Model scale={[1.5, 1.5, 1.5]} /> {/* Increase scale to fill 90% of the card */}
+                </Suspense>
+              </group>
+            </Canvas>
+          </div>
         </div>
       </div>
     </div>

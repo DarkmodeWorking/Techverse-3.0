@@ -1,4 +1,4 @@
-"use client"; // Ensure this is a client-side component
+"use client";
 
 import React from 'react';
 import { useGLTF } from '@react-three/drei';
@@ -7,35 +7,37 @@ import { ExtendedColors, Overwrite, NodeProps, NonFunctionKeys, Vector3, Euler, 
 import { EventHandlers } from '@react-three/fiber/dist/declarations/src/core/events';
 
 export function Model(props: React.JSX.IntrinsicAttributes & Omit<ExtendedColors<Overwrite<Partial<THREE.Group<THREE.Object3DEventMap>>, NodeProps<THREE.Group<THREE.Object3DEventMap>, typeof THREE.Group>>>, NonFunctionKeys<{ position?: Vector3; up?: Vector3; scale?: Vector3; rotation?: Euler; matrix?: Matrix4; quaternion?: Quaternion; layers?: Layers; dispose?: (() => void) | null; }>> & { position?: Vector3; up?: Vector3; scale?: Vector3; rotation?: Euler; matrix?: Matrix4; quaternion?: Quaternion; layers?: Layers; dispose?: (() => void) | null; } & EventHandlers) {
-  const { nodes, materials } = useGLTF('/tshirt.glb'); // Load the GLB model
+  const { nodes, materials } = useGLTF('/tshirt.glb'); 
 
-  // Debugging: Log nodes and materials to the console
-  console.log("Nodes:", nodes);
-  console.log("Materials:", materials);
+  // Check and cast material to MeshStandardMaterial for emissive properties
+  const tshirtMaterial = materials['default'] as THREE.MeshStandardMaterial | undefined;
+
+  if (tshirtMaterial) {
+    tshirtMaterial.emissive = new THREE.Color(0x222222); // Soft gray glow
+    tshirtMaterial.emissiveIntensity = 1.2; // Adjust for desired glow effect
+  }
 
   return (
     <group {...props} dispose={null}>
-      {/* Iterate through nodes to render them if available */}
       {nodes && Object.keys(nodes).map((key) => {
         const node = nodes[key];
 
-        // Check if the node is a Mesh
         if (node instanceof THREE.Mesh) {
           return (
             <mesh
               key={key}
-              geometry={node.geometry as THREE.BufferGeometry} // Type assertion
-              material={materials[node.material?.name] || materials['default']} // Handle undefined materials
-              position={node.position} // Use node's position
-              rotation={node.rotation} // Use node's rotation
-              scale={node.scale} // Use node's scale
+              geometry={node.geometry}
+              material={tshirtMaterial || materials[node.material?.name] || materials['default']}
+              position={node.position}
+              rotation={node.rotation}
+              scale={node.scale}
             />
           );
         }
-        return null; // Return null for non-mesh nodes
+        return null;
       })}
     </group>
   );
 }
 
-useGLTF.preload('/tshirt.glb'); // Preload the model
+useGLTF.preload('/tshirt.glb');
