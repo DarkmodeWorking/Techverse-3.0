@@ -7,7 +7,7 @@ import Link from "next/link";
 
 function Index() {
 	const buyLink =
-		"https://docs.google.com/forms/d/e/1FAIpQLSdrFaBfxtSA1b4Vj4lffP1Vu6-tQpIVcUpFHxSOOVbM4Bn59g/viewform?usp=sf_link";
+		"/checkout";
 
 	return (
 		<div className="flex flex-col items-center text-white  bg-black">
@@ -30,7 +30,7 @@ function Index() {
 					{/* Buy Now Button */}
 					<div className="flex justify-center md:justify-start">
 						<Link href={buyLink}>
-							<div className="buynow text-center py-2 px-4 bg-purple-500 hover:bg-blue-700 text-white font-semibold rounded transition duration-170">
+							<div className="buynow text-center py-2 px-4 bg-purple-700 hover:bg-purple-900 text-white font-semibold rounded transition duration-170">
 								Buy Now
 							</div>
 						</Link>
