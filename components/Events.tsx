@@ -54,6 +54,7 @@ import { BGMIButton } from "./events/BGMI/BGMIButton";
 import { FootballButton } from "./events/Football/FootballButton";
 import { PhotoButton } from "./events/Photography/PhotoButton";
 import { TreasureHuntButton } from "./events/TreasureHunt/TreasureHuntButton";
+import VisionHackTracks from "./events/VisionHack/VisionHackTracks";
 
 export function Events() {
   const cards = data.map((card, index) => (
@@ -87,6 +88,7 @@ const data = [
     content: <VisionHack />,
     rules: <VisionHackRules />,
     heads: <VisionHackHeads />,
+    tracks:<VisionHackTracks />,
     button: <VisionHackButton />
   },
   {
