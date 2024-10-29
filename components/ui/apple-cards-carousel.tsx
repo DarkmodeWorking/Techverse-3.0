@@ -27,6 +27,7 @@ type Card = {
   category: string;
   content: React.ReactNode;
   rules: React.ReactNode;
+  tracks?:React.ReactNode;
   heads: React.ReactNode;
   button: React.ReactNode;
 };
@@ -238,6 +239,7 @@ export const Card = ({
               </motion.p>
               <div className="py-10">{card.content}</div>
               <div className="py-0">{card.rules}</div>
+              <div className="py-0">{card.tracks}</div>
               <div className="py-10">{card.heads}</div>
               <div className="py-0">{card.button}</div>
               <div className="text-center">

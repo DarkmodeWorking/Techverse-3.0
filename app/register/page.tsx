@@ -29,14 +29,14 @@ interface FormValues {
 }
 
 const eventData: EventData[] = [
-  {
-    name: "Run for The One Piece (Treasure Hunt)",
-    teamPrice: `${170} for 2-3 members & ₹${200} for 4 members`,
-    hasSolo: false,
-    hasTeam: true,
-    minTeamMembers: 2,
-    maxTeamMembers: 4,
-  },
+  // {
+  //   name: "Run for The One Piece (Treasure Hunt)",
+  //   teamPrice: `${170} for 2-3 members & ₹${200} for 4 members`,
+  //   hasSolo: false,
+  //   hasTeam: true,
+  //   minTeamMembers: 2,
+  //   maxTeamMembers: 4,
+  // },
   {
     name: "Model Matrix (Model Display)",
     teamPrice: `${100}`,

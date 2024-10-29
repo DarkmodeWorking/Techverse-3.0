@@ -27,6 +27,7 @@ type Card = {
   category: string;
   content: React.ReactNode;
   rules: React.ReactNode;
+  tracks?:React.ReactNode;
   heads: React.ReactNode;
 };
 
