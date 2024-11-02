@@ -99,14 +99,14 @@ const eventData: EventData[] = [
     minTeamMembers: 2,
     maxTeamMembers: 4,
   },
-  {
-    name: "BGMI (Battle Royale)",
-    teamPrice: `${250}`,
-    hasSolo: false,
-    hasTeam: true,
-    minTeamMembers: 4,
-    maxTeamMembers: 6,
-  },
+  // {
+  //   name: "BGMI (Battle Royale)",
+  //   teamPrice: `${250}`,
+  //   hasSolo: false,
+  //   hasTeam: true,
+  //   minTeamMembers: 4,
+  //   maxTeamMembers: 6,
+  // },
   // {
   //   name: "Digital Kickoff (E Football)",
   //   teamPrice: `${301}`,
